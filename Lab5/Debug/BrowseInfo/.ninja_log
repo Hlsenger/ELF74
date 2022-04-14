@@ -1,0 +1,33 @@
+# ninja log v5
+1	83	6689241220000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/main.xcl	6052712782606f74
+88	117	6689241225490715	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/main.pbi	930d06e2a5e9aac5
+121	129	6689241225620820	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbd	e56c33d950d1470e
+133	588	6689241230019958	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbw	e214eddd56c08d10
+0	105	6689245780000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	8bdd231f91f21e9d
+110	142	6689245782677286	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	6aaa247c7d0952f3
+146	159	6689245782847321	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbd	28cef465b33189e9
+162	841	6689245789425120	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbw	e214eddd56c08d10
+0	87	6689246900000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	a05cf40702c4a934
+95	129	6689246901234046	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	6aaa247c7d0952f3
+134	143	6689246901393812	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbd	28cef465b33189e9
+147	595	6689246905733508	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbw	e214eddd56c08d10
+1	87	6689248110000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	1ca2885a16cf446a
+94	186	6689248118983530	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	6aaa247c7d0952f3
+190	211	6689248119253444	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbd	28cef465b33189e9
+217	786	6689248124752306	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbw	e214eddd56c08d10
+0	85	6689248320000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	8002669c022ca702
+94	183	6689248329069444	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	6aaa247c7d0952f3
+187	209	6689248329339362	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbd	28cef465b33189e9
+213	840	6689248335437412	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbw	e214eddd56c08d10
+1	87	6689250000000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	181d400d2b2bb197
+94	179	6689250002858181	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	6aaa247c7d0952f3
+182	213	6689250003198059	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbd	28cef465b33189e9
+216	834	6689250009176146	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/BrowseInfo/Lab5.pbw	e214eddd56c08d10
+1	89	6700477180000000	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	8c6265ad3aba7bea
+97	136	6700477189364731	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	7c6af997324d5e57
+140	149	6700477189514681	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Lab5.pbd	8e09af2160b87563
+153	634	6700477194172913	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Lab5.pbw	522ff53fc4dae73b
+1	89	6700480050000000	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Source/sample_threadx.xcl	d9ae3a0876979a38
+94	190	6700480053124014	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Source/sample_threadx.pbi	7c6af997324d5e57
+194	224	6700480053473902	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Lab5.pbd	8e09af2160b87563
+227	807	6700480059068957	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/BrowseInfo/Lab5.pbw	522ff53fc4dae73b

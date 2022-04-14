@@ -1,0 +1,21 @@
+# ninja log v5
+5	30	6689245244011366	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/cstartup_M.o	948ba519791eb3a2
+1	42	6689245244131308	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/tx_initialize_low_level.o	1045401326ce8861
+5	16	6689246917748447	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/cstartup_M.o	948ba519791eb3a2
+0	27	6689246917858411	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/tx_initialize_low_level.o	1045401326ce8861
+1	220	6689248291857970	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/sample_threadx.o	8e0d32f977328117
+227	327	6689248292897642	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Exe/Lab5.out	3950863b83157a1
+2	143	6689249970552602	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/sample_threadx.o	88ec89158ebef587
+150	238	6689249971512296	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Exe/Lab5.out	3950863b83157a1
+1	70	6692665894146218	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/cstartup_M.o	948ba519791eb3a2
+6	74	6692665894266185	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/tx_initialize_low_level.o	1045401326ce8861
+2	164	6692668217051415	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Obj/Source/sample_threadx.o	e6985dc9f4e2b43d
+172	355	6692668218958546	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab5/Debug/Exe/Lab5.out	3950863b83157a1
+1	23	6692670088379456	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/cstartup_M.o	4ad6ef9b87938f10
+8	33	6692670088469419	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/tx_initialize_low_level.o	9e868cac9628b346
+5	141	6692670089461184	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/sample_threadx.o	f749b96195fe02cd
+149	240	6692670090430741	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Exe/Lab5.out	4ae30ee5aaa5bcb0
+7	29	6700480021019968	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/Obj/Source/cstartup_M.o	ccf57566e9740ddb
+1	37	6700480021079949	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/Obj/Source/tx_initialize_low_level.o	f19e042b4bd259dc
+9	263	6700480023236165	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/Obj/Source/sample_threadx.o	7c34fd98b86f4b72
+270	370	6700480024322256	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab5/Debug/Exe/Lab5.out	b80e310ae11a5b4a

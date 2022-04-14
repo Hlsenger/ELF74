@@ -1,0 +1,26 @@
+# ninja log v5
+7	221	6700410113354986	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/startup_ewarm.o	b14aab97ba035921
+1	232	6700413328150964	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	7301e4b21cd867b3
+240	305	6700413328920650	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	121	6700413538761573	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	7301e4b21cd867b3
+128	175	6700413539361360	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+8	192	6700420561003351	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/startup_ewarm.o	b14aab97ba035921
+2	122	6700421626361911	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	7301e4b21cd867b3
+129	183	6700421627011901	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+1	118	6700422267483126	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	7301e4b21cd867b3
+126	180	6700422268132909	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+7	71	6700424514450383	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/startup_ewarm.o	6d5b9849bf6e7321
+2	132	6700424515070170	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+140	201	6700424515770098	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	128	6700425284225597	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+134	194	6700425284915364	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	136	6700425705123248	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+147	208	6700425705902990	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	121	6700426262604981	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+129	182	6700426263223220	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	125	6700426543305228	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+132	199	6700426544034991	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	123	6700473411215188	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+130	196	6700473411974771	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2
+2	123	6700475674738336	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Obj/Source/main.o	f8a646f69fcf68ee
+132	194	6700475675478080	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab4/Debug/Exe/Lab4.out	bad57f17e6e3cff2

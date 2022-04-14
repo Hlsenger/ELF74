@@ -1,0 +1,62 @@
+# ninja log v5
+0	387	6689064510000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/main.xcl	ff06a8dcce6be7a2
+394	552	6689064513124849	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/main.pbi	9ee8ca84dcc14fba
+556	586	6689064513474737	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Lab3.pbd	89cbb27e3b25568e
+590	1975	6689064527170618	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Lab3.pbw	a17fc908fad5d39f
+1	85	6689065890000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/main.xcl	aa492365908b630f
+91	123	6689065890962994	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/main.pbi	9ee8ca84dcc14fba
+126	135	6689065891113081	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Lab3.pbd	89cbb27e3b25568e
+139	621	6689065895771497	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Lab3.pbw	a17fc908fad5d39f
+1	129	6689241000000000	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Source/main.xcl	586535e62ab042a7
+135	667	6689241012693449	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Source/main.pbi	aa9bcab311866dd8
+671	758	6689241013613082	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Lab3.pbd	397d85773703dd1d
+762	1769	6689241023363652	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab3/Debug/BrowseInfo/Lab3.pbw	a17fc908fad5d39f
+1	408	6700387800000000	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.xcl	6583377935eed4eb
+413	1100	6700387809373465	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+1104	1189	6700387810283160	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+1193	2721	6700387825266688	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	57	6700388179462367	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+62	74	6700388179662166	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+79	579	6700388184483998	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	52	6700388790935914	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+56	66	6700388791095738	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+70	518	6700388795414341	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+0	54	6700388897196422	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+57	68	6700388897355033	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+72	544	6700388901930399	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+0	54	6700389356642090	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+58	69	6700389356822036	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+73	557	6700389361463362	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	54	6700389917142101	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+58	69	6700389917312051	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+73	567	6700389922099549	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+0	49	6700389973303321	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+53	63	6700389973463403	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+67	522	6700389977863860	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	51	6700390129948920	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+55	66	6700390130108883	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+70	564	6700390134883620	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+0	54	6700390490109507	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+58	68	6700390490279317	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+0	479	6700390549630514	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	57	6700390854609354	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+60	70	6700390854759140	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+74	538	6700390859238840	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	50	6700391162773228	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+53	65	6700391162943183	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+69	511	6700391167204546	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+0	49	6700392076020667	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+53	64	6700392076180619	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+68	524	6700392080587287	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	50	6700392182219613	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+54	66	6700392182389431	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+69	510	6700392186652379	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+0	54	6700392692758867	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+57	68	6700392692928996	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+71	574	6700392697807250	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	50	6700392799408042	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+54	64	6700392799567995	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+68	528	6700392804020931	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
+1	57	6700393511150150	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Source/main.pbi	76ef2f2b9bded081
+61	72	6700393511310131	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbd	ec123fc40ec70b35
+76	592	6700393516296508	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab3/Debug/BrowseInfo/Lab3.pbw	59d63b2679d0083e
