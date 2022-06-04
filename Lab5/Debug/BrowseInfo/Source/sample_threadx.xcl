@@ -1,17 +1,19 @@
-"E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\src\sample_threadx.c"
+"E:\Faculdade\Sistemas Embarcados\Labs\Lab5\src\sample_threadx.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi.dep
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi.dep
 -o
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\src
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\src
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\ThirdParty\Threadx\inc\
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\ThirdParty\Threadx\inc\
+-I
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\ThirdParty\TivaWare_C_Series-2.2.0.295\
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -19,7 +21,9 @@ D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\ThirdParty\Threadx\inc
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\ThirdParty\Threadx\inc
+-I
+E:\Faculdade\Sistemas Embarcados\Labs\Lab5\ThirdParty\TivaWare_C_Series-2.2.0.295
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -372,7 +376,10 @@ E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab5\ThirdParty\Threadx\inc
 -D__EDG_FLOAT80_ENABLING_POSSIBLE=0
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
+-Dewarm=1
 -DTX_ENABLE_IAR_LIBRARY_SUPPORT=1
+-DPART_TM4C129ENCPDT=1
+-DTARGET_IS_TM4C129_RA2=1
 -D_DLIB_CONFIG_FILE_HEADER_NAME="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h"
 -D_DLIB_CONFIG_FILE_STRING="D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Normal.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V9.20.4.327/W64 for ARM"

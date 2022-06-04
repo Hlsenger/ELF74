@@ -24,28 +24,28 @@ rule PDBLINK
 
 
 #Build steps
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.xcl : COMPILER_XCL 
-  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\src\main.c" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\src\main.c" -D ewarm -D PART_TM4C1294NCPDT -D TARGET_IS_TM4C129_RA0 -o "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295\\" -Ol --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.tmp"
-  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.xcl.rsp
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\src\main.c" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\src\main.c" -D ewarm -D PART_TM4C1294NCPDT -D TARGET_IS_TM4C129_RA0 -o "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295\\" -Ol --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.tmp"
+  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.xcl.rsp
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl : COMPILER_XCL 
-  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\src\startup_ewarm.c" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\src\startup_ewarm.c" -D ewarm -D PART_TM4C1294NCPDT -D TARGET_IS_TM4C129_RA0 -o "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295\\" -Ol --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.tmp"
-  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl.rsp
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\src\startup_ewarm.c" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\src\startup_ewarm.c" -D ewarm -D PART_TM4C1294NCPDT -D TARGET_IS_TM4C129_RA0 -o "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295\\" -Ol --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.tmp"
+  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl.rsp
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.xcl |  $
-E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\src\main.c
-  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.xcl"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.xcl |  $
+E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\src\main.c
+  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.xcl"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl |  $
-E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\src\startup_ewarm.c
-  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl |  $
+E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\src\startup_ewarm.c
+  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.xcl"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Lab4.pbw : MAKEBROWSE E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Lab4.pbd
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Lab4.pbd" -output "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Lab4.pbw"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Lab4.pbw : MAKEBROWSE E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Lab4.pbd
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Lab4.pbd" -output "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Lab4.pbw"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Lab4.pbd : PDBLINK E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.pbi |  $
-E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi
-  flags = -M "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Lab4.pbd" "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\main.pbi" "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Lab4.pbd : PDBLINK E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.pbi |  $
+E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi
+  flags = -M "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Lab4.pbd" "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.pbi" "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\startup_ewarm.pbi"
 

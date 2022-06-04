@@ -74473,7 +74473,7 @@
     "location": {
       "column": "5",
       "line": "84",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs Entrega\\Lab1\\main.cpp"
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab1\\main.cpp"
     },
     "name": "main",
     "origin": "project_file",
@@ -74487,7 +74487,7 @@
     "location": {
       "column": "9",
       "line": "86",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs Entrega\\Lab1\\main.cpp"
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab1\\main.cpp"
     },
     "name": "num_float",
     "origin": "project_file",
@@ -74587,7 +74587,7 @@
     "location": {
       "column": "9",
       "line": "19",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs Entrega\\Lab1\\template.h"
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab1\\template.h"
     },
     "name": "_MODULE_NAME_",
     "origin": "user_include",

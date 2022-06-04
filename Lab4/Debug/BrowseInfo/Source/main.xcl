@@ -1,17 +1,17 @@
-"E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab4\src\main.c"
+"E:\Faculdade\Sistemas Embarcados\Labs\Lab4\src\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab4\Debug\BrowseInfo\Source\main.pbi.dep
+E:\Faculdade\Sistemas Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.pbi.dep
 -o
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab4\Debug\BrowseInfo\Source\main.pbi
+E:\Faculdade\Sistemas Embarcados\Labs\Lab4\Debug\BrowseInfo\Source\main.pbi
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab4\src
+E:\Faculdade\Sistemas Embarcados\Labs\Lab4\src
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295\
+E:\Faculdade\Sistemas Embarcados\Labs\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295\
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -19,7 +19,7 @@ D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295
+E:\Faculdade\Sistemas Embarcados\Labs\Lab4\ThirdParty\TivaWare_C_Series-2.2.0.295
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

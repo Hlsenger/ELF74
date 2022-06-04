@@ -24,18 +24,18 @@ rule PDBLINK
 
 
 #Build steps
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.xcl : COMPILER_XCL 
-  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\src\sample_threadx.c" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\src\sample_threadx.c" -D TX_ENABLE_IAR_LIBRARY_SUPPORT -o "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\ThirdParty\Threadx\inc\\" -Ol --guard_calls --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.tmp"
-  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.xcl.rsp
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\src\lab5.c" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\src\lab5.c" -D ewarm -D TX_ENABLE_IAR_LIBRARY_SUPPORT -D PART_TM4C129ENCPDT -D TARGET_IS_TM4C129_RA2 -o "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\ThirdParty\Threadx\inc\\" -I "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\ThirdParty\TivaWare_C_Series-2.2.0.295\\" -Ol --guard_calls --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.tmp"
+  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.xcl.rsp
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.xcl |  $
-E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\src\sample_threadx.c
-  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.xcl"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.xcl |  $
+E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\src\lab5.c
+  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.xcl"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Lab5.pbw : MAKEBROWSE E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Lab5.pbd
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Lab5.pbd" -output "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Lab5.pbw"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Lab5.pbw : MAKEBROWSE E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Lab5.pbd
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Lab5.pbd" -output "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Lab5.pbw"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Lab5.pbd : PDBLINK E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi
-  flags = -M "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Lab5.pbd" "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab5\Debug\BrowseInfo\Source\sample_threadx.pbi"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Lab5.pbd : PDBLINK E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.pbi
+  flags = -M "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Lab5.pbd" "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab5\Debug\BrowseInfo\Source\lab5.pbi"
 

@@ -2848,6 +2848,9 @@
     <group>
         <name>Libraries</name>
         <file>
+            <name>$PROJ_DIR$\ThirdParty\TivaWare_C_Series-2.2.0.295\libs\driverlib.a</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\ThirdParty\Threadx\lib\tx.a</name>
         </file>
     </group>
@@ -2857,7 +2860,7 @@
             <name>$PROJ_DIR$\src\cstartup_M.s</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\sample_threadx.c</name>
+            <name>$PROJ_DIR$\src\lab5.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\src\tx_initialize_low_level.s</name>

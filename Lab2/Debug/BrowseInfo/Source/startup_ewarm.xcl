@@ -1,19 +1,19 @@
-"E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\src\startup_ewarm.c"
+"E:\Faculdade\Sistemas Embarcados\Labs\Lab2\src\startup_ewarm.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\Debug\BrowseInfo\Source\startup_ewarm.pbi.dep
+E:\Faculdade\Sistemas Embarcados\Labs\Lab2\Debug\BrowseInfo\Source\startup_ewarm.pbi.dep
 -o
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\Debug\BrowseInfo\Source\startup_ewarm.pbi
+E:\Faculdade\Sistemas Embarcados\Labs\Lab2\Debug\BrowseInfo\Source\startup_ewarm.pbi
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\src
+E:\Faculdade\Sistemas Embarcados\Labs\Lab2\src
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\..\
+E:\Faculdade\Sistemas Embarcados\Labs\Lab2\..\
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\ThirdParty\TivaWare_C_Series-2.2.0.295\
+E:\Faculdade\Sistemas Embarcados\Labs\Lab2\ThirdParty\TivaWare_C_Series-2.2.0.295\
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -21,9 +21,9 @@ D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega
+E:\Faculdade\Sistemas Embarcados\Labs
 -I
-E:\Faculdade\Sistemas Embarcados\Labs Entrega\Lab2\ThirdParty\TivaWare_C_Series-2.2.0.295
+E:\Faculdade\Sistemas Embarcados\Labs\Lab2\ThirdParty\TivaWare_C_Series-2.2.0.295
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

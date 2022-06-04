@@ -62,7 +62,7 @@
         <CStepIntDis>_ 0</CStepIntDis>
     </LmiFtdiDriver>
     <DebugChecksum>
-        <Checksum>2858872763</Checksum>
+        <Checksum>798126364</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -100,7 +100,9 @@
         <Count>0</Count>
     </Breakpoints2>
     <Aliases>
-        <Count>0</Count>
-        <SuppressDialog>0</SuppressDialog>
+        <A0>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.c" ""</A0>
+        <A1>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\systick.c" ""</A1>
+        <Count>2</Count>
+        <SuppressDialog>1</SuppressDialog>
     </Aliases>
 </settings>
