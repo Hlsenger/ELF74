@@ -21,8 +21,9 @@ description of this demonstration.  */
 #include "driverlib/gpio.h"
 #include "driverlib/uart.h"
 
-#define THREAD_STACK_SIZE         1024
+#define THREAD_STACK_SIZE         512
 #define BYTE_POOL_SIZE     4096
+#define QUEUE_SIZE      128
 
 
 
@@ -33,38 +34,109 @@ TX_THREAD               thread_0;
 TX_THREAD               thread_1;
 TX_BYTE_POOL            byte_pool_0;
 
+TX_QUEUE                queue_e;
+TX_QUEUE                queue_c;
+TX_QUEUE                queue_d;
+TX_QUEUE                queue_out;
+
 
 /* Define byte pool memory.  */
 
 UCHAR                   byte_pool_memory[BYTE_POOL_SIZE];
 
 
-/* Define the counters used in the demo application...  */
-ULONG                   thread_0_counter;
-ULONG                   thread_1_counter;
 
 
-//Satus dos leds
-bool led1 = false;
-bool led2 = false;
+
+
+
 
 uint32_t sysClock;
 
 
+#define MAX_QUEUE_SIZE 64
+#define CHAR_BUFFER_SIZE 128
+
+//Char buffer definitiosn
+typedef struct CharBuffer{
+  uint32_t head;
+  uint32_t tail;
+  uint8_t data[CHAR_BUFFER_SIZE];
+} CharBuffer; 
+
+
+void charBufferAdd(CharBuffer *buffer,uint8_t data){
+  buffer->data[buffer->head] = data;
+  buffer->head = (buffer->head + 1) % CHAR_BUFFER_SIZE;
+}
+
+
+bool charBufferGet(CharBuffer *buffer, uint8_t *data){
+  if(buffer->tail == buffer->head){
+    return false;
+  }
+  *data = buffer->data[buffer->tail];
+  buffer->tail = (buffer->tail + 1) % CHAR_BUFFER_SIZE;
+  return true;
+}
+
+bool charBufferIsEmpty(CharBuffer *buffer){
+  if(buffer->tail == buffer->head){
+    return true;
+  }
+  return false;
+}
+
+
+
+
+
+
+
+
+enum Direcao{parado, subindo, descendo};
+
+typedef struct Elevador{
+  enum Direcao direcao;
+  UINT ultimoAndar;
+  UINT destinoAndar;
+  
+  bool andaresPressionados[16];
+  
+} Elevador;
+
+CharBuffer uart0Buffer;
+
+
+bool serial_flag;
+CHAR serial_in_data[32];
+
+
+Elevador elevador_e;
+
 
 /* Define thread prototypes.  */
-void    thread_tled1(ULONG thread_input);
-void    thread_tled2(ULONG thread_input);
+void thread_serial_service(ULONG thread_input);
+void thread_elevador_esquerdo(ULONG thread_input);
 
 void UART0IntHandler(void)
 {
-    uint32_t ui32Status = UARTIntStatus(UART0_BASE, true);
-    UARTIntClear(UART0_BASE, ui32Status);
-    
-    while(UARTCharsAvail(UART0_BASE)) {
-      unsigned char chr = UARTCharGetNonBlocking(UART0_BASE);
-      //UARTCharPutNonBlocking(UART0_BASE, chr);
-    }
+  _tx_thread_context_save();
+  
+  uint32_t ui32Status = UARTIntStatus(UART0_BASE, true);
+  UARTIntClear(UART0_BASE, ui32Status);
+  
+  
+  
+  
+  uint32_t i =0;
+  while(UARTCharsAvail(UART0_BASE)) {
+    char a = UARTCharGetNonBlocking(UART0_BASE);
+    charBufferAdd(&uart0Buffer,a);
+    serial_flag = true;
+  }
+  
+  _tx_thread_context_restore();
 }
 
 
@@ -74,6 +146,10 @@ void uart0_setup();
 
 
 void uart0_setup(){
+  
+  serial_flag = false;
+  
+  
   //Enable UART and GPIOA clocks
   SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
@@ -81,13 +157,14 @@ void uart0_setup(){
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOA)) {}
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_UART0)) {}
   
-  UARTFIFODisable(UART0_BASE);
-  
-  
+  //UARTFIFODisable(UART0_BASE);
   
   //Enable UART interrupts
   IntMasterEnable();
-  UARTIntRegister(UART0_BASE,UART0IntHandler);
+  
+  IntEnable(INT_UART0);
+  
+  UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
   
   //Configure UART0 pins
   GPIOPinConfigure(GPIO_PA0_U0RX);
@@ -100,16 +177,7 @@ void uart0_setup(){
                        UART_CONFIG_PAR_NONE));
   
   
-  
-  
-  
-  
-  
-  
-  
-  IntEnable(INT_UART0);
-  
-  UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
+  UARTEnable(UART0_BASE);
 }
 
 
@@ -127,10 +195,13 @@ void tiva_setup(){
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)) {}
   GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0 | GPIO_PIN_1);
-  
-  
-  
-  
+}
+
+
+void uart0_string_put(CHAR *str, UINT size){
+  for(UINT i=0;i<size;i++){
+    UARTCharPutNonBlocking(UART0_BASE,str[i]);
+  }
 }
 
 
@@ -140,15 +211,15 @@ int main()
 {
   tiva_setup();
   
-  /* Please refer to Chapter 6 of the ThreadX User Guide for a complete
-  description of this demonstration.  */
   
-
-
-          
   
-
-  /* Enter the ThreadX kernel.  */
+  
+  
+  
+  
+  
+  
+  
   tx_kernel_enter();
 }
 
@@ -160,76 +231,196 @@ void    tx_application_define(void *first_unused_memory)
   
   CHAR    *pointer = TX_NULL;
   
-  
-  /* Create a byte memory pool from which to allocate the thread stacks.  */
   tx_byte_pool_create(&byte_pool_0, "byte pool 0", byte_pool_memory, BYTE_POOL_SIZE);
   
-  /* Put system definition stuff in here, e.g. thread creates and other assorted
-  create information.  */
   
-  /* Allocate the stack for thread 0.  */
+  
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
-  
-  /* Create the main thread.  */
-  
-  
-  tx_thread_create(&thread_0, "TLed1", thread_tled1, 0,  
+  tx_thread_create(&thread_0, "Serial Service", thread_serial_service, 0,  
                    pointer, THREAD_STACK_SIZE, 
                    1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
   
-  /* Allocate the stack for thread 1.  */
-  tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
   
-  /* Create threads 1 and 2. These threads pass information through a ThreadX 
-  message queue.  It is also interesting to note that these threads have a time
-  slice.  */
-  tx_thread_create(&thread_1, "TLed2", thread_tled2, 1,  
+  tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
+  tx_thread_create(&thread_1, "Elevador esquerdo", thread_elevador_esquerdo, 1,  
                    pointer, THREAD_STACK_SIZE, 
                    1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
+  
+  
+  
+  
+  tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, QUEUE_SIZE, TX_NO_WAIT);
+  tx_queue_create(&queue_e, "queue elevador esquerdo", TX_1_ULONG, pointer, QUEUE_SIZE);
+  
+  tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, QUEUE_SIZE, TX_NO_WAIT);
+  tx_queue_create(&queue_out, "queue saida serial", TX_1_ULONG, pointer, QUEUE_SIZE);
   
   
 }
 
 
+void parse_cmd(CHAR *cmd){
+  
+  
+  
+  CHAR elevador = serial_in_data[0];
+  
+  
+  switch(elevador){
+  case 'e':
+    
+    tx_queue_send(&queue_e, &(serial_in_data[1]), TX_WAIT_FOREVER);
+    break;
+    
+  case 'c':
+    
+    //!!TEMPORARIO
+    uart0_string_put("er\x0D",3);
+    uart0_string_put("cr\x0D",3);
+    uart0_string_put("dr\x0D",3);
+    break;
+    
+  case 'd':
+    break;
+    
+  case 'i':
+    uart0_string_put("er\x0D",3);
+    uart0_string_put("cr\x0D",3);
+    uart0_string_put("dr\x0D",3);
+    break;
+  } 
+}
 
-void    thread_tled1(ULONG thread_input)
+
+
+void  thread_serial_service(ULONG thread_input)
 {
+  UINT status;
+  CHAR a;
+  
+  
   while(1)
   {
-    led1 = !led1;
-    GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, led1<<1);
-    tx_thread_sleep(50); // 50*10ms = 0,5s
+    if(serial_flag){
+      
+       a = 0x00;
+      uint32_t i = 0;
+      
+      while(!charBufferIsEmpty(&uart0Buffer) && a != '\n')
+      {
+        charBufferGet(&uart0Buffer,&a);
+        serial_in_data[i++] = a;
+      }
+      
+      
+      parse_cmd(serial_in_data);
+      
+      serial_flag = false;
+    }
+    
+    
+    CHAR msg[4];
+    status = tx_queue_receive(&queue_out, msg, TX_NO_WAIT);
+    
+    if(status == TX_SUCCESS){
+      for(UINT i=0;i<3;i++){
+        UARTCharPut(UART0_BASE,msg[i]);
+      }
+    }
+    
+    
+    
+    
+    tx_thread_sleep(1);
   }
 }
 
 
-void    thread_tled2(ULONG thread_input)
+void  thread_elevador_esquerdo (ULONG thread_input)
 {
   
+  //Inicialzia todos os elevadores
+  elevador_e.direcao = parado;
+  elevador_e.destinoAndar = 0;
+  elevador_e.ultimoAndar = 0;
   
-     UARTCharPutNonBlocking(UART0_BASE, 'e');
-     UARTCharPutNonBlocking(UART0_BASE, 'r');
-     UARTCharPutNonBlocking(UART0_BASE, 0xD);
+  
+  CHAR msg[4];
   while(1)
   {
-    led2 = !led2;
-    GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, led2);
+    
+    //Elevador so atua ao receber uma nova atualização
+    tx_queue_receive(&queue_e, msg, TX_WAIT_FOREVER);
     
     
     
-   
-     UARTCharPutNonBlocking(UART0_BASE, 'e');
-     UARTCharPutNonBlocking(UART0_BASE, 'f');
-     UARTCharPutNonBlocking(UART0_BASE, 0xD);
+    //Processa mensagem
     
-    tx_thread_sleep(100); // 100*10ms = 1s
+    //Botao externo
+    if(msg[0] == 'E'){
+      // tx_queue_send(&queue_out, "er\x0D", TX_WAIT_FOREVER);
+      tx_queue_send(&queue_out, "ef\x0D", TX_WAIT_FOREVER);
+      tx_thread_sleep(100);
+      tx_queue_send(&queue_out, "ea\x0D", TX_WAIT_FOREVER);
+    }
     
     
-     UARTCharPutNonBlocking(UART0_BASE, 'e');
-     UARTCharPutNonBlocking(UART0_BASE, 'a');
-     UARTCharPutNonBlocking(UART0_BASE, 0xD);
+    //Botao interno
+    else if(msg[0] == 'I'){
+      
+      elevador_e.andaresPressionados[msg[1]-97] =  true;
+      elevador_e.destinoAndar = msg[1]-97;
+      
+      /* tx_queue_send(&queue_out, "ef\x0D", TX_WAIT_FOREVER);
+      tx_thread_sleep(100);
+      tx_queue_send(&queue_out, "es\x0D", TX_WAIT_FOREVER);*/
+    }
     
-     tx_thread_sleep(100); // 100*10ms = 1s
+    //Status do elevador
+    else{
+      
+      
+      //Porta aberta ou fechada
+      if(msg[0] == 'A' || msg[0] == 'F'){
+        
+      }
+      else{
+        elevador_e.ultimoAndar= atoi(msg);
+        //tx_queue_send(&queue_out, "ep\x0D", TX_WAIT_FOREVER);
+      }
+    }
+    
+    
+    //Atua na mensagem
+    
+    if(elevador_e.direcao == parado){
+      if(elevador_e.destinoAndar > elevador_e.ultimoAndar){
+        elevador_e.direcao = subindo;
+        tx_queue_send(&queue_out, "ef\x0D", TX_WAIT_FOREVER);
+        tx_thread_sleep(100);
+        tx_queue_send(&queue_out, "es\x0D", TX_WAIT_FOREVER);
+      }else if(elevador_e.destinoAndar < elevador_e.ultimoAndar){
+        elevador_e.direcao = subindo;
+        tx_queue_send(&queue_out, "ef\x0D", TX_WAIT_FOREVER);
+        tx_thread_sleep(100);
+        tx_queue_send(&queue_out, "ed\x0D", TX_WAIT_FOREVER);
+      }
+    }
+    else if(elevador_e.direcao == subindo){
+      if(elevador_e.destinoAndar == elevador_e.ultimoAndar){
+        elevador_e.direcao = parado;
+        tx_queue_send(&queue_out, "ep\x0D", TX_WAIT_FOREVER);
+      }
+    }
+    else if(elevador_e.direcao == descendo){
+      if(elevador_e.destinoAndar == elevador_e.ultimoAndar){
+        elevador_e.direcao = parado;
+        tx_queue_send(&queue_out, "ep\x0D", TX_WAIT_FOREVER);
+      }
+    }
+    
+    
+    tx_thread_sleep(1);
     
   }
 }

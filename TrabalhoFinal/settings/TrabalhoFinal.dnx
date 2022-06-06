@@ -46,23 +46,23 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <PlDriver>
-        <FirstRun>0</FirstRun>
         <MemConfigValue>D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\TexasInstruments\TM4C1292NCPDT.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
     </PlDriver>
     <LmiFtdiDriver>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
         <LmiFtdiResetStyle>0</LmiFtdiResetStyle>
         <LmiFtdiResetStrategy>0</LmiFtdiResetStrategy>
         <LMIFTDIserialNo>0F800C6A</LMIFTDIserialNo>
         <LMIFTDIfoundProbes />
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
     </LmiFtdiDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>
         <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
     </ArmDriver>
     <DebugChecksum>
-        <Checksum>3614676580</Checksum>
+        <Checksum>3185227405</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -78,6 +78,21 @@
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
     </Trace2>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\src\main.c}.318.7" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints2>
+    <Aliases>
+        <A0>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\gpio.c" ""</A0>
+        <A1>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\interrupt.c" ""</A1>
+        <A2>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.c" ""</A2>
+        <A3>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\uart.c" ""</A3>
+        <Count>4</Count>
+        <SuppressDialog>1</SuppressDialog>
+    </Aliases>
     <CallStackLog>
         <Enabled>0</Enabled>
     </CallStackLog>
@@ -93,18 +108,4 @@
         <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
         <Category2>_ 2</Category2>
     </LogFile>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\src\main.c}.61.14" 0 0 1 "" 0 "" 0</Bp0>
-        <Count>1</Count>
-    </Breakpoints2>
-    <Aliases>
-        <A0>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\gpio.c" ""</A0>
-        <A1>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\interrupt.c" ""</A1>
-        <A2>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.c" ""</A2>
-        <Count>3</Count>
-        <SuppressDialog>1</SuppressDialog>
-    </Aliases>
 </settings>
