@@ -3,11 +3,15 @@ threads of different priorities, using a message queue, semaphore, mutex, event 
 byte pool, and block pool. Please refer to Chapter 6 of the ThreadX User Guide for a complete
 description of this demonstration.  */
 
+
+
 #include "tx_api.h"
 #include "tx_port.h"
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
+
 #include "inc/hw_memmap.h"
 #include "driverlib/debug.h"
 #include "driverlib/sysctl.h"
@@ -26,6 +30,9 @@ description of this demonstration.  */
 #define QUEUE_SIZE      128
 
 
+#define RECIEVE_FLAG 0x1
+#define SEND_FLAG  0x2
+
 
 
 /* Define the ThreadX object control blocks...  */
@@ -37,6 +44,8 @@ TX_QUEUE                queue_e;
 TX_QUEUE                queue_c;
 TX_QUEUE                queue_d;
 TX_QUEUE                queue_out;
+
+TX_EVENT_FLAGS_GROUP    uart0_flags;
 
 
 /* Define byte pool memory.  */
@@ -98,14 +107,14 @@ typedef struct Elevador{
   TX_QUEUE *queue_in;
   TX_QUEUE *queue_out;
   
-  bool andaresPressionados[16];
+  CHAR andaresPressionados[16];
   
 } Elevador;
 
 CharBuffer uart0Buffer;
 
 
-bool serial_flag;
+
 
 
 
@@ -134,8 +143,9 @@ void UART0IntHandler(void)
   while(UARTCharsAvail(UART0_BASE)) {
     char a = UARTCharGetNonBlocking(UART0_BASE);
     charBufferAdd(&uart0Buffer,a);
-    serial_flag = true;
   }
+  
+  tx_event_flags_set(&uart0_flags, RECIEVE_FLAG, TX_OR);
   
   _tx_thread_context_restore();
 }
@@ -148,7 +158,6 @@ void uart0_setup();
 
 void uart0_setup(){
   
-  serial_flag = false;
   
   
   //Enable UART and GPIOA clocks
@@ -165,7 +174,7 @@ void uart0_setup(){
   
   IntEnable(INT_UART0);
   
-  //UARTFIFODisable(UART0_BASE);
+  UARTFIFODisable(UART0_BASE);
   
   UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
   
@@ -220,7 +229,8 @@ int main()
   elevador_e.destinoAndar = 0;
   elevador_e.ultimoAndar = 0;
   elevador_e.direcao = parado;
- 
+  memset(elevador_e.andaresPressionados,0,sizeof(elevador_e.andaresPressionados));
+  
   
   
   elevador_c.id = 'c';
@@ -229,6 +239,7 @@ int main()
   elevador_c.destinoAndar = 0;
   elevador_c.ultimoAndar = 0;
   elevador_c.direcao = parado;
+  memset(elevador_c.andaresPressionados,0,sizeof(elevador_c.andaresPressionados));
   
   elevador_d.id = 'd';
   elevador_d.queue_in = &queue_d;
@@ -236,13 +247,14 @@ int main()
   elevador_d.destinoAndar = 0;
   elevador_d.ultimoAndar = 0;
   elevador_d.direcao = parado;
+  memset(elevador_d.andaresPressionados,0,sizeof(elevador_d.andaresPressionados));
   
-    
+  
   
   tiva_setup();
   
   
- 
+  
   tx_kernel_enter();
 }
 
@@ -267,17 +279,17 @@ void    tx_application_define(void *first_unused_memory)
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
   tx_thread_create(&threads[1], "Elevador esquerdo", thread_elevador, (ULONG)&elevador_e,  
                    pointer, THREAD_STACK_SIZE, 
-                   1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
+                   2, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
   
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
   tx_thread_create(&threads[2], "Elevador central", thread_elevador, (ULONG)&elevador_c,  
                    pointer, THREAD_STACK_SIZE, 
-                   1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
+                   2, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
   
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
   tx_thread_create(&threads[3], "Elevador direito", thread_elevador, (ULONG)&elevador_d,  
                    pointer, THREAD_STACK_SIZE, 
-                   1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
+                   2, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
   
   
   
@@ -293,6 +305,8 @@ void    tx_application_define(void *first_unused_memory)
   
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, QUEUE_SIZE, TX_NO_WAIT);
   tx_queue_create(&queue_out, "queue saida serial", TX_1_ULONG, pointer, QUEUE_SIZE);
+  
+  tx_event_flags_create(&uart0_flags, "uart0 flags");
   
   
 }
@@ -336,44 +350,54 @@ void parse_cmd(CHAR *cmd){
 void  thread_serial_service(ULONG thread_input)
 {
   UINT status;
+  ULONG flags;
   CHAR a;
   
   CHAR serial_in_data[32];
   
   
+  
+  
+  
   while(1)
   {
-    if(serial_flag){
-      
-      
-      uint32_t i = 0;
-      a = 0;
-      while(!charBufferIsEmpty(&uart0Buffer) && a != '\n')
-      {
-        charBufferGet(&uart0Buffer,&a);
-        serial_in_data[i++] = a;
-      }
-      
-      
-      parse_cmd(serial_in_data);
-      
-      serial_flag = false;
-    }
     
-    
-    CHAR msg[4];
-    status = tx_queue_receive(&queue_out, msg, TX_NO_WAIT);
-    
+    status =  tx_event_flags_get(&uart0_flags, RECIEVE_FLAG | SEND_FLAG, TX_OR_CLEAR, &flags, TX_WAIT_FOREVER);
     if(status == TX_SUCCESS){
-      for(UINT i=0;i<3;i++){
-        UARTCharPut(UART0_BASE,msg[i]);
+      
+      
+      
+      
+      if(flags & RECIEVE_FLAG){
+        uint32_t i = 0;
+        
+        a = 0;
+        while(!charBufferIsEmpty(&uart0Buffer) && a != '\n')
+        {
+          charBufferGet(&uart0Buffer,&a);
+          serial_in_data[i++] = a;
+        }
+        
+        
+        parse_cmd(serial_in_data);
+      }
+      
+      
+    }
+    
+    if(flags & SEND_FLAG){
+      
+      CHAR msg[4];
+      status = tx_queue_receive(&queue_out, msg, TX_NO_WAIT);
+      
+      if(status == TX_SUCCESS){
+        for(UINT i=0;i<3;i++){
+          UARTCharPut(UART0_BASE,msg[i]);
+        }
       }
     }
     
     
-    
-    
-    tx_thread_sleep(1);
   }
 }
 
@@ -382,49 +406,57 @@ void  thread_serial_service(ULONG thread_input)
 
 
 void elevador_sobe(Elevador *elevador){
-    CHAR out[3];
-    out[0] = elevador->id;
-    out[1] = 's';
-    out[2] = '\x0D';
-    
-    tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
+  CHAR out[3];
+  out[0] = elevador->id;
+  out[1] = 's';
+  out[2] = '\x0D';
+  
+  
+  tx_event_flags_set(&uart0_flags, SEND_FLAG, TX_OR);
+  tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
 }
 
 void elevador_desce(Elevador *elevador){
-    CHAR out[3];
-    out[0] = elevador->id;
-    out[1] = 'd';
-    out[2] = '\x0D';
-    
-    tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
+  CHAR out[3];
+  out[0] = elevador->id;
+  out[1] = 'd';
+  out[2] = '\x0D';
+  
+  
+  tx_event_flags_set(&uart0_flags, SEND_FLAG, TX_OR);
+  tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
 }
 
 void elevador_para(Elevador *elevador){
-    CHAR out[3];
-    out[0] = elevador->id;
-    out[1] = 'p';
-    out[2] = '\x0D';
-    
-    tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
+  CHAR out[3];
+  out[0] = elevador->id;
+  out[1] = 'p';
+  out[2] = '\x0D';
+  
+  
+  tx_event_flags_set(&uart0_flags, SEND_FLAG, TX_OR);
+  tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
 }
 
 
 void elevador_abre(Elevador *elevador){
-    CHAR out[3];
-    out[0] = elevador->id;
-    out[1] = 'a';
-    out[2] = '\x0D';
-    
-    tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
+  CHAR out[3];
+  out[0] = elevador->id;
+  out[1] = 'a';
+  out[2] = '\x0D';
+  
+  tx_event_flags_set(&uart0_flags, SEND_FLAG, TX_OR);
+  tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
 }
 
 void elevador_fecha(Elevador *elevador){
-    CHAR out[3];
-    out[0] = elevador->id;
-    out[1] = 'f';
-    out[2] = '\x0D';
-    
-    tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
+  CHAR out[3];
+  out[0] = elevador->id;
+  out[1] = 'f';
+  out[2] = '\x0D';
+  
+  tx_event_flags_set(&uart0_flags, SEND_FLAG, TX_OR);
+  tx_queue_send(elevador->queue_out, out, TX_WAIT_FOREVER);
 }
 
 
@@ -439,9 +471,9 @@ void  thread_elevador (ULONG input)
   
   
   CHAR msg[4];
-
   
- 
+  
+  
   while(1)
   {
     
@@ -455,17 +487,17 @@ void  thread_elevador (ULONG input)
     //Botao externo
     if(msg[0] == 'E'){
       // tx_queue_send(&queue_out, "er\x0D", TX_WAIT_FOREVER);
-     elevador_fecha(elevador);
-     tx_thread_sleep(100);
-     elevador_abre(elevador);
+      elevador_fecha(elevador);
+      tx_thread_sleep(100);
+      elevador_abre(elevador);
     }
     
     
     //Botao interno
     else if(msg[0] == 'I'){
       
-       elevador->andaresPressionados[msg[1]-97] =  true;
-       elevador->destinoAndar = msg[1]-97;
+      elevador->andaresPressionados[msg[1]-97] =  true;
+      elevador->destinoAndar = msg[1]-97;
       
       /* tx_queue_send(&queue_out, "ef\x0D", TX_WAIT_FOREVER);
       tx_thread_sleep(100);
@@ -489,7 +521,7 @@ void  thread_elevador (ULONG input)
     
     //Atua na mensagem
     
-     if(elevador->direcao == parado){
+    if(elevador->direcao == parado){
       if(elevador->destinoAndar > elevador->ultimoAndar){
         elevador->direcao = subindo;
         elevador_fecha(elevador);
