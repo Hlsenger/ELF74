@@ -2125,7 +2125,22 @@
     <group>
         <name>Source</name>
         <file>
+            <name>$PROJ_DIR$\src\charbuffer.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\charbuffer.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\src\cstartup_M.s</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\defines.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\elevador.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\elevador.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\src\main.c</name>
