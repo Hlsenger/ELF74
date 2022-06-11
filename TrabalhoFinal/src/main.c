@@ -29,9 +29,7 @@ description of this demonstration.  */
 #include "charbuffer.h"
 #include "elevador.h"
 
-#define THREAD_STACK_SIZE         512
-#define BYTE_POOL_SIZE     2*8192
-#define QUEUE_SIZE      128
+
 
 
 
@@ -55,19 +53,10 @@ TX_EVENT_FLAGS_GROUP    uart0_flags;
 UCHAR                   byte_pool_memory[BYTE_POOL_SIZE];
 
 
-
-
-
-
-
-
 uint32_t sysClock;
 
 
 #define MAX_QUEUE_SIZE 64
-
-
-
 
 
 
@@ -197,6 +186,8 @@ void    tx_application_define(void *first_unused_memory)
   
   
   
+  
+  //==== Threads ===
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
   tx_thread_create(&threads[0], "Serial Service", thread_serial_service, 0,  
                    pointer, THREAD_STACK_SIZE, 
@@ -221,6 +212,7 @@ void    tx_application_define(void *first_unused_memory)
   
   
   
+  //==== Estruras de dados ====
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, QUEUE_SIZE, TX_NO_WAIT);
   tx_queue_create(&queue_e, "queue elevador esquerdo", TX_1_ULONG, pointer, QUEUE_SIZE);
   
@@ -265,6 +257,7 @@ void parse_cmd(CHAR *cmd){
   case 'i':
     //Pula o /n gerado pelo 'initialized'
     charBufferGet(&uart0Buffer,&a);
+    //Inicializa os 3 elevadores
     uart0_string_put("er\x0D",3);
     uart0_string_put("cr\x0D",3);
     uart0_string_put("dr\x0D",3);
@@ -281,9 +274,6 @@ void  thread_serial_service(ULONG thread_input)
   CHAR a;
   
   CHAR serial_in_data[32];
-  
-  
-  
   
   
   while(1)
@@ -319,14 +309,10 @@ void  thread_serial_service(ULONG thread_input)
           }
           
           status = tx_queue_receive(&uart0_queue_out, msg, TX_NO_WAIT);
-
+          
         }
       }
-    }
-    
-   
-    
-    
+    } 
   }
 }
 
@@ -355,24 +341,33 @@ void  thread_elevador (ULONG input)
     //Elevador so atua ao receber uma nova atualização
     tx_queue_receive(elevador->queue_in, msg, TX_WAIT_FOREVER);
     
-    
-    
-    
     //Processa mensagem
     
     //Botao externo
     if(msg[0] == 'E'){
-      elevador_fecha(elevador);
-      tx_thread_sleep(100);
-      elevador_abre(elevador);
+      CHAR andarChr[3] = {msg[1],msg[2],'\0'};      
+      UINT andar = atoi(andarChr);
+      
+      
+      if(msg[3]  == 's'){
+        elevador->andaresPressionados[andar] = subindo;
+      }
+      else{
+        elevador->andaresPressionados[andar] = descendo;
+      }     
     }
     
     
     //Botao interno
     else if(msg[0] == 'I'){
       
-      elevador->andaresPressionados[msg[1]-97] =  true;
-      elevador->destinoAndar = msg[1]-97;
+      UINT andar = msg[1]-97;
+      
+      
+      
+      elevador->andaresPressionados[andar] = 1;
+      
+      // elevador->destinoAndar = msg[1]-97;
     }
     
     //Status do elevador
@@ -392,29 +387,95 @@ void  thread_elevador (ULONG input)
     //Atua na mensagem
     
     if(elevador->direcao == parado){
+      for (UINT i=0;i<NUM_ANDARES;i++){
+        if(elevador->andaresPressionados[i] !=  0){
+          elevador->destinoAndar = i;
+        }
+      }
+      
       if(elevador->destinoAndar > elevador->ultimoAndar){
         elevador->direcao = subindo;
         elevador_fecha(elevador);
         tx_thread_sleep(50);
         elevador_sobe(elevador);
       }else if(elevador->destinoAndar < elevador->ultimoAndar){
-        elevador->direcao = subindo;
+        elevador->direcao = descendo;
         elevador_fecha(elevador);
         tx_thread_sleep(50);
         elevador_desce(elevador);
       }
     }
     else if(elevador->direcao == subindo){
+      
+      
       if(elevador->destinoAndar == elevador->ultimoAndar){
-        elevador->direcao = parado;
+        
         elevador_para(elevador);
+        elevador_abre(elevador);
+        elevador->andaresPressionados[elevador->destinoAndar] =  0;
+        tx_thread_sleep(TEMPO_PARADO);
+        
+        
+        
+        //Checa se existe algum andar acima deste pressionado
+        UINT proximo_andar = 16;
+        for (UINT i=0;i<NUM_ANDARES;i++){
+          
+          
+          if(elevador->andaresPressionados[i] !=  0 && i > elevador->destinoAndar){
+            if(i < proximo_andar){
+              proximo_andar = i;
+            }
+          }
+        }
+        
+        if(proximo_andar < 16){
+          elevador->destinoAndar = proximo_andar;
+          elevador_fecha(elevador);
+          tx_thread_sleep(50);
+          elevador_sobe(elevador);
+        }
+        
+        if(elevador->destinoAndar == elevador->ultimoAndar){
+          elevador->direcao = parado;
+        }    
       }
+      
     }
     else if(elevador->direcao == descendo){
       if(elevador->destinoAndar == elevador->ultimoAndar){
-        elevador->direcao = parado;
         elevador_para(elevador);
+        elevador_abre(elevador);
+        elevador->andaresPressionados[elevador->destinoAndar] =  0;
+        tx_thread_sleep(TEMPO_PARADO);
+        
+        
+        
+        //Checa se existe algum andar acima deste pressionado
+        INT proximo_andar = -1;
+        for (UINT i=0;i<NUM_ANDARES;i++){
+          
+          
+          if(elevador->andaresPressionados[i] !=  0 && i < elevador->destinoAndar){
+            if(i > proximo_andar){
+              proximo_andar = i;
+            }
+          }
+        }
+        
+        if(proximo_andar >= 0){
+          elevador->destinoAndar = proximo_andar;
+          elevador_fecha(elevador);
+          tx_thread_sleep(50);
+          elevador_desce(elevador);
+        }
+        
+        if(elevador->destinoAndar == elevador->ultimoAndar){
+          elevador->direcao = parado;
+        }    
       }
-    }    
+    }
   }
+  
+  
 }

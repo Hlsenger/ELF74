@@ -17,7 +17,6 @@ void elevador_inicializa(Elevador *elevador, CHAR id,TX_QUEUE *queue_in, TX_QUEU
 }
 
 
-
 void elevador_sobe(Elevador *elevador){
   CHAR out[3];
   out[0] = elevador->id;

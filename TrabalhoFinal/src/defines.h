@@ -6,8 +6,20 @@
 #define SEND_FLAG  0x2
 
 
+#define THREAD_STACK_SIZE         512
+#define BYTE_POOL_SIZE     2*8192
+#define QUEUE_SIZE      128
+
+
 
 #define CHAR_BUFFER_SIZE 128
+
+
+//Parametros do elevador(todos em ticks)
+
+
+#define TEMPO_PARADO 200 //Tempo que o elvador para em cada andar
+#define NUM_ANDARES 15
 
 
 #endif

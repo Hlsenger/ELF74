@@ -51,9 +51,6 @@ void    thread_tled2(ULONG thread_input);
 
 
 
-
-
-
 void tiva_setup();
 
 
@@ -82,12 +79,8 @@ int main()
 {
   tiva_setup();
   
-  /* Please refer to Chapter 6 of the ThreadX User Guide for a complete
-  description of this demonstration.  */
+ 
   
-  
-  
-  /* Enter the ThreadX kernel.  */
   tx_kernel_enter();
 }
 
@@ -103,25 +96,15 @@ void    tx_application_define(void *first_unused_memory)
   /* Create a byte memory pool from which to allocate the thread stacks.  */
   tx_byte_pool_create(&byte_pool_0, "byte pool 0", byte_pool_memory, BYTE_POOL_SIZE);
   
-  /* Put system definition stuff in here, e.g. thread creates and other assorted
-  create information.  */
-  
-  /* Allocate the stack for thread 0.  */
+
+
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
-  
-  /* Create the main thread.  */
-  
-  
   tx_thread_create(&thread_0, "TLed1", thread_tled1, 0,  
                    pointer, THREAD_STACK_SIZE, 
                    1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
   
-  /* Allocate the stack for thread 1.  */
+
   tx_byte_allocate(&byte_pool_0, (VOID **) &pointer, THREAD_STACK_SIZE, TX_NO_WAIT);
-  
-  /* Create threads 1 and 2. These threads pass information through a ThreadX 
-  message queue.  It is also interesting to note that these threads have a time
-  slice.  */
   tx_thread_create(&thread_1, "TLed2", thread_tled2, 1,  
                    pointer, THREAD_STACK_SIZE, 
                    1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);

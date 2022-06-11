@@ -20148,20 +20148,6 @@
     "scope": null
   },
   {
-    "ID": "c:stdint.h@T@__data_uintptr_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "89",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
-    },
-    "name": "__data_uintptr_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:stdint.h@T@__data_intptr_t",
     "What": "Typedef",
     "defdec": "Def",
@@ -20172,6 +20158,20 @@
       "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
     },
     "name": "__data_intptr_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdint.h@T@__data_uintptr_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "1",
+      "line": "89",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
+    },
+    "name": "__data_uintptr_t",
     "origin": "system_include",
     "scope": null
   },
@@ -22824,16 +22824,86 @@
     "scope": null
   },
   {
-    "ID": "c:defines.h@126@macro@CHAR_BUFFER_SIZE",
+    "ID": "c:defines.h@124@macro@THREAD_STACK_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "CHAR_BUFFER_SIZE",
+    "display": "THREAD_STACK_SIZE",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\defines.h"
+    },
+    "name": "THREAD_STACK_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:defines.h@163@macro@BYTE_POOL_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BYTE_POOL_SIZE",
     "location": {
       "column": "9",
       "line": "10",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\defines.h"
     },
+    "name": "BYTE_POOL_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:defines.h@198@macro@QUEUE_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "QUEUE_SIZE",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\defines.h"
+    },
+    "name": "QUEUE_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:defines.h@233@macro@CHAR_BUFFER_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CHAR_BUFFER_SIZE",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\defines.h"
+    },
     "name": "CHAR_BUFFER_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:defines.h@313@macro@TEMPO_PARADO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMPO_PARADO",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\defines.h"
+    },
+    "name": "TEMPO_PARADO",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:defines.h@380@macro@NUM_ANDARES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NUM_ANDARES",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\defines.h"
+    },
+    "name": "NUM_ANDARES",
     "origin": "user_include",
     "scope": null
   },
@@ -23320,7 +23390,7 @@
     "display": "void elevador_sobe(Elevador *)",
     "location": {
       "column": "6",
-      "line": "21",
+      "line": "20",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_sobe",
@@ -23328,13 +23398,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@509@F@elevador_sobe@out",
+    "ID": "c:elevador.c@507@F@elevador_sobe@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "22",
+      "line": "21",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23348,7 +23418,7 @@
     "display": "void elevador_desce(Elevador *)",
     "location": {
       "column": "6",
-      "line": "33",
+      "line": "32",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_desce",
@@ -23356,13 +23426,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@769@F@elevador_desce@out",
+    "ID": "c:elevador.c@767@F@elevador_desce@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "34",
+      "line": "33",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23376,7 +23446,7 @@
     "display": "void elevador_para(Elevador *)",
     "location": {
       "column": "6",
-      "line": "45",
+      "line": "44",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_para",
@@ -23384,13 +23454,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@1030@F@elevador_para@out",
+    "ID": "c:elevador.c@1028@F@elevador_para@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "46",
+      "line": "45",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23404,7 +23474,7 @@
     "display": "void elevador_abre(Elevador *)",
     "location": {
       "column": "6",
-      "line": "57",
+      "line": "56",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_abre",
@@ -23412,13 +23482,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@1289@F@elevador_abre@out",
+    "ID": "c:elevador.c@1287@F@elevador_abre@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "58",
+      "line": "57",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23432,7 +23502,7 @@
     "display": "void elevador_fecha(Elevador *)",
     "location": {
       "column": "6",
-      "line": "67",
+      "line": "66",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_fecha",
@@ -23440,13 +23510,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@1543@F@elevador_fecha@out",
+    "ID": "c:elevador.c@1541@F@elevador_fecha@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "68",
+      "line": "67",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -61720,55 +61790,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@857@macro@THREAD_STACK_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "THREAD_STACK_SIZE",
-    "location": {
-      "column": "9",
-      "line": "32",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
-    },
-    "name": "THREAD_STACK_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@896@macro@BYTE_POOL_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BYTE_POOL_SIZE",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
-    },
-    "name": "BYTE_POOL_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@931@macro@QUEUE_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "QUEUE_SIZE",
-    "location": {
-      "column": "9",
-      "line": "34",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
-    },
-    "name": "QUEUE_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@threads",
     "What": "Variable",
     "defdec": "Dec",
     "display": "threads",
     "location": {
       "column": "25",
-      "line": "42",
+      "line": "40",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "threads",
@@ -61782,7 +61810,7 @@
     "display": "byte_pool_0",
     "location": {
       "column": "25",
-      "line": "43",
+      "line": "41",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "byte_pool_0",
@@ -61796,7 +61824,7 @@
     "display": "queue_e",
     "location": {
       "column": "25",
-      "line": "45",
+      "line": "43",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "queue_e",
@@ -61810,7 +61838,7 @@
     "display": "queue_c",
     "location": {
       "column": "25",
-      "line": "46",
+      "line": "44",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "queue_c",
@@ -61824,7 +61852,7 @@
     "display": "queue_d",
     "location": {
       "column": "25",
-      "line": "47",
+      "line": "45",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "queue_d",
@@ -61838,7 +61866,7 @@
     "display": "uart0_queue_out",
     "location": {
       "column": "25",
-      "line": "48",
+      "line": "46",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "uart0_queue_out",
@@ -61852,7 +61880,7 @@
     "display": "uart0_flags",
     "location": {
       "column": "25",
-      "line": "50",
+      "line": "48",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "uart0_flags",
@@ -61866,7 +61894,7 @@
     "display": "byte_pool_memory",
     "location": {
       "column": "25",
-      "line": "55",
+      "line": "53",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "byte_pool_memory",
@@ -61880,7 +61908,7 @@
     "display": "sysClock",
     "location": {
       "column": "10",
-      "line": "64",
+      "line": "56",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "sysClock",
@@ -61888,13 +61916,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1423@macro@MAX_QUEUE_SIZE",
+    "ID": "c:main.c@1310@macro@MAX_QUEUE_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "MAX_QUEUE_SIZE",
     "location": {
       "column": "9",
-      "line": "67",
+      "line": "59",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "MAX_QUEUE_SIZE",
@@ -61908,7 +61936,7 @@
     "display": "uart0Buffer",
     "location": {
       "column": "12",
-      "line": "74",
+      "line": "63",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "uart0Buffer",
@@ -61922,7 +61950,7 @@
     "display": "elevador_e",
     "location": {
       "column": "10",
-      "line": "76",
+      "line": "65",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador_e",
@@ -61936,7 +61964,7 @@
     "display": "elevador_c",
     "location": {
       "column": "10",
-      "line": "77",
+      "line": "66",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador_c",
@@ -61950,7 +61978,7 @@
     "display": "elevador_d",
     "location": {
       "column": "10",
-      "line": "78",
+      "line": "67",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador_d",
@@ -61964,7 +61992,7 @@
     "display": "void thread_serial_service(ULONG)",
     "location": {
       "column": "6",
-      "line": "82",
+      "line": "71",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_serial_service",
@@ -61978,7 +62006,7 @@
     "display": "void thread_elevador(ULONG)",
     "location": {
       "column": "6",
-      "line": "83",
+      "line": "72",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_elevador",
@@ -61992,7 +62020,7 @@
     "display": "void UART0IntHandler(void)",
     "location": {
       "column": "6",
-      "line": "85",
+      "line": "74",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "UART0IntHandler",
@@ -62000,13 +62028,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1746@F@UART0IntHandler@ui32Status",
+    "ID": "c:main.c@1627@F@UART0IntHandler@ui32Status",
     "What": "Variable",
     "defdec": "Def",
     "display": "ui32Status",
     "location": {
       "column": "12",
-      "line": "89",
+      "line": "78",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "ui32Status",
@@ -62014,13 +62042,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1902@F@UART0IntHandler@a",
+    "ID": "c:main.c@1783@F@UART0IntHandler@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "10",
-      "line": "96",
+      "line": "85",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "a",
@@ -62034,7 +62062,7 @@
     "display": "void tiva_setup(void)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "96",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "tiva_setup",
@@ -62048,7 +62076,7 @@
     "display": "void uart0_setup(void)",
     "location": {
       "column": "6",
-      "line": "108",
+      "line": "97",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "uart0_setup",
@@ -62062,7 +62090,7 @@
     "display": "void uart0_setup(void)",
     "location": {
       "column": "6",
-      "line": "111",
+      "line": "100",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "uart0_setup",
@@ -62076,7 +62104,7 @@
     "display": "void tiva_setup(void)",
     "location": {
       "column": "6",
-      "line": "149",
+      "line": "138",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "tiva_setup",
@@ -62090,7 +62118,7 @@
     "display": "void uart0_string_put(CHAR *, UINT)",
     "location": {
       "column": "6",
-      "line": "165",
+      "line": "154",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "uart0_string_put",
@@ -62098,13 +62126,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3558@F@uart0_string_put@i",
+    "ID": "c:main.c@3439@F@uart0_string_put@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "166",
+      "line": "155",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "i",
@@ -62118,7 +62146,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "174",
+      "line": "163",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "main",
@@ -62132,7 +62160,7 @@
     "display": "void tx_application_define(void *)",
     "location": {
       "column": "9",
-      "line": "191",
+      "line": "180",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "tx_application_define",
@@ -62140,13 +62168,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4111@F@tx_application_define@pointer",
+    "ID": "c:main.c@3992@F@tx_application_define@pointer",
     "What": "Variable",
     "defdec": "Def",
     "display": "pointer",
     "location": {
       "column": "12",
-      "line": "194",
+      "line": "183",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "pointer",
@@ -62160,7 +62188,7 @@
     "display": "void parse_cmd(CHAR *)",
     "location": {
       "column": "6",
-      "line": "242",
+      "line": "234",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "parse_cmd",
@@ -62168,13 +62196,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6214@F@parse_cmd@elevador",
+    "ID": "c:main.c@6154@F@parse_cmd@elevador",
     "What": "Variable",
     "defdec": "Def",
     "display": "elevador",
     "location": {
       "column": "8",
-      "line": "246",
+      "line": "238",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador",
@@ -62182,13 +62210,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6241@F@parse_cmd@a",
+    "ID": "c:main.c@6181@F@parse_cmd@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "8",
-      "line": "247",
+      "line": "239",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "a",
@@ -62202,7 +62230,7 @@
     "display": "void thread_serial_service(ULONG)",
     "location": {
       "column": "7",
-      "line": "277",
+      "line": "270",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_serial_service",
@@ -62210,13 +62238,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6822@F@thread_serial_service@status",
+    "ID": "c:main.c@6796@F@thread_serial_service@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
     "location": {
       "column": "8",
-      "line": "279",
+      "line": "272",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "status",
@@ -62224,13 +62252,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6838@F@thread_serial_service@flags",
+    "ID": "c:main.c@6812@F@thread_serial_service@flags",
     "What": "Variable",
     "defdec": "Def",
     "display": "flags",
     "location": {
       "column": "9",
-      "line": "280",
+      "line": "273",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "flags",
@@ -62238,13 +62266,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6854@F@thread_serial_service@a",
+    "ID": "c:main.c@6828@F@thread_serial_service@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "8",
-      "line": "281",
+      "line": "274",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "a",
@@ -62252,13 +62280,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6869@F@thread_serial_service@serial_in_data",
+    "ID": "c:main.c@6843@F@thread_serial_service@serial_in_data",
     "What": "Variable",
     "defdec": "Def",
     "display": "serial_in_data",
     "location": {
       "column": "8",
-      "line": "283",
+      "line": "276",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "serial_in_data",
@@ -62266,13 +62294,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7123@F@thread_serial_service@i",
+    "ID": "c:main.c@7085@F@thread_serial_service@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "295",
+      "line": "285",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "i",
@@ -62280,13 +62308,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7455@F@thread_serial_service@msg",
+    "ID": "c:main.c@7417@F@thread_serial_service@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "12",
-      "line": "312",
+      "line": "302",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "msg",
@@ -62294,13 +62322,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7635@F@thread_serial_service@i",
+    "ID": "c:main.c@7597@F@thread_serial_service@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "20",
-      "line": "317",
+      "line": "307",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "i",
@@ -62314,7 +62342,7 @@
     "display": "void thread_elevador(ULONG)",
     "location": {
       "column": "7",
-      "line": "338",
+      "line": "324",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_elevador",
@@ -62322,13 +62350,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7912@F@thread_elevador@elevador",
+    "ID": "c:main.c@7862@F@thread_elevador@elevador",
     "What": "Variable",
     "defdec": "Def",
     "display": "elevador",
     "location": {
       "column": "13",
-      "line": "340",
+      "line": "326",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador",
@@ -62336,16 +62364,128 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8095@F@thread_elevador@msg",
+    "ID": "c:main.c@8045@F@thread_elevador@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "8",
-      "line": "348",
+      "line": "334",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@8303@F@thread_elevador@andarChr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "andarChr",
+    "location": {
+      "column": "12",
+      "line": "348",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "andarChr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@8357@F@thread_elevador@andar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "andar",
+    "location": {
+      "column": "12",
+      "line": "349",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "andar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@8664@F@thread_elevador@andar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "andar",
+    "location": {
+      "column": "12",
+      "line": "364",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "andar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@9140@F@thread_elevador@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "390",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@10114@F@thread_elevador@proximo_andar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "proximo_andar",
+    "location": {
+      "column": "14",
+      "line": "421",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "proximo_andar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@10153@F@thread_elevador@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "19",
+      "line": "422",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@11144@F@thread_elevador@proximo_andar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "proximo_andar",
+    "location": {
+      "column": "13",
+      "line": "455",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "proximo_andar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@11182@F@thread_elevador@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "19",
+      "line": "456",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -69056,48 +69196,6 @@
     "scope": null
   },
   {
-    "ID": "c:debug.h@2042@macro@__DRIVERLIB_DEBUG_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DRIVERLIB_DEBUG_H__",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\debug.h"
-    },
-    "name": "__DRIVERLIB_DEBUG_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__error__",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __error__(char *, uint32_t)",
-    "location": {
-      "column": "13",
-      "line": "49",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\debug.h"
-    },
-    "name": "__error__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:debug.h@3356@macro@ASSERT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ASSERT",
-    "location": {
-      "column": "9",
-      "line": "67",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\debug.h"
-    },
-    "name": "ASSERT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:systick.h@2031@macro@__DRIVERLIB_SYSTICK_H__",
     "What": "MacroDef",
     "defdec": "Def",
@@ -69234,6 +69332,48 @@
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\systick.h"
     },
     "name": "SysTickValueGet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:debug.h@2042@macro@__DRIVERLIB_DEBUG_H__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DRIVERLIB_DEBUG_H__",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\debug.h"
+    },
+    "name": "__DRIVERLIB_DEBUG_H__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__error__",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __error__(char *, uint32_t)",
+    "location": {
+      "column": "13",
+      "line": "49",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\debug.h"
+    },
+    "name": "__error__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:debug.h@3356@macro@ASSERT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ASSERT",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\ThirdParty\\TivaWare_C_Series-2.2.0.295\\driverlib\\debug.h"
+    },
+    "name": "ASSERT",
     "origin": "user_include",
     "scope": null
   }
