@@ -6,9 +6,13 @@
 #define SEND_FLAG  0x2
 
 
+
+//Defines relacionados ao Threadx
 #define THREAD_STACK_SIZE         512
 #define BYTE_POOL_SIZE     2*8192
 #define QUEUE_SIZE      128
+
+
 
 
 
@@ -19,7 +23,7 @@
 
 
 #define TEMPO_PARADO 200 //Tempo que o elvador para em cada andar
-#define NUM_ANDARES 15
+#define NUM_ANDARES 16
 
 
 #endif

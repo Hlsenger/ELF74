@@ -5,12 +5,12 @@ description of this demonstration.  */
 
 
 
-#include "tx_api.h"
-#include "tx_port.h"
-
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
+
+#include "tx_api.h"
+#include "tx_port.h"
 
 #include "inc/hw_memmap.h"
 #include "driverlib/debug.h"
@@ -24,19 +24,12 @@ description of this demonstration.  */
 #include "driverlib/gpio.h"
 #include "driverlib/uart.h"
 
-
 #include "defines.h"
 #include "charbuffer.h"
 #include "elevador.h"
 
 
-
-
-
-
-
-/* Define the ThreadX object control blocks...  */
-
+//Estruturas do Threadx
 TX_THREAD               threads[4];
 TX_BYTE_POOL            byte_pool_0;
 
@@ -46,28 +39,26 @@ TX_QUEUE                queue_d;
 TX_QUEUE                uart0_queue_out;
 
 TX_EVENT_FLAGS_GROUP    uart0_flags;
-
-
-/* Define byte pool memory.  */
-
 UCHAR                   byte_pool_memory[BYTE_POOL_SIZE];
+
+
 
 
 uint32_t sysClock;
 
 
-#define MAX_QUEUE_SIZE 64
+
+
 
 
 
 CharBuffer uart0Buffer;
-
 Elevador elevador_e;
 Elevador elevador_c;
 Elevador elevador_d;
 
 
-/* Define thread prototypes.  */
+
 void thread_serial_service(ULONG thread_input);
 void thread_elevador(ULONG thread_input);
 
@@ -98,9 +89,6 @@ void uart0_setup();
 
 
 void uart0_setup(){
-  
-  
-  
   //Enable UART and GPIOA clocks
   SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
@@ -108,18 +96,10 @@ void uart0_setup(){
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOA)) {}
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_UART0)) {}
   
-  
-  
-  //Enable UART interrupts
   IntMasterEnable();
-  
   IntEnable(INT_UART0);
   
-  //UARTFIFODisable(UART0_BASE);
-  
   UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
-  
-  //Configure UART0 pins
   GPIOPinConfigure(GPIO_PA0_U0RX);
   GPIOPinConfigure(GPIO_PA1_U0TX);
   GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
@@ -232,13 +212,9 @@ void    tx_application_define(void *first_unused_memory)
 
 
 void parse_cmd(CHAR *cmd){
-  
-  
-  
   CHAR elevador = cmd[0];
-  CHAR a;
-  
-  
+
+    
   switch(elevador){
   case 'e':
     tx_queue_send(&queue_e, &(cmd[1]), TX_NO_WAIT);
@@ -252,17 +228,24 @@ void parse_cmd(CHAR *cmd){
     tx_queue_send(&queue_d, &(cmd[1]), TX_NO_WAIT);
     break;
     
-    
-    
   case 'i':
     //Pula o /n gerado pelo 'initialized'
-    charBufferGet(&uart0Buffer,&a);
+    charBufferSkip(&uart0Buffer);
+    
+    //Reseta os 3 elevadores
+    elevador_reset(&elevador_e);
+    elevador_reset(&elevador_c);
+    elevador_reset(&elevador_d);
+    
     //Inicializa os 3 elevadores
     uart0_string_put("er\x0D",3);
     uart0_string_put("cr\x0D",3);
     uart0_string_put("dr\x0D",3);
+    
     break;
   } 
+  
+  
 }
 
 
@@ -275,7 +258,6 @@ void  thread_serial_service(ULONG thread_input)
   
   CHAR serial_in_data[32];
   
-  
   while(1)
   {
     
@@ -285,7 +267,7 @@ void  thread_serial_service(ULONG thread_input)
         uint32_t i = 0;
         
         a = 0;
-        while(!charBufferIsEmpty(&uart0Buffer) && a != '\n')
+        while(!charBufferIsEmpty(&uart0Buffer))
         {
           charBufferGet(&uart0Buffer,&a);
           serial_in_data[i++] = a;
@@ -309,16 +291,11 @@ void  thread_serial_service(ULONG thread_input)
           }
           
           status = tx_queue_receive(&uart0_queue_out, msg, TX_NO_WAIT);
-          
         }
       }
     } 
   }
 }
-
-
-
-
 
 
 void  thread_elevador (ULONG input)
@@ -338,143 +315,16 @@ void  thread_elevador (ULONG input)
   while(1)
   {
     
-    //Elevador so atua ao receber uma nova atualização
+    //Thread aguarda até receber uma mensagem
     tx_queue_receive(elevador->queue_in, msg, TX_WAIT_FOREVER);
     
-    //Processa mensagem
     
-    //Botao externo
-    if(msg[0] == 'E'){
-      CHAR andarChr[3] = {msg[1],msg[2],'\0'};      
-      UINT andar = atoi(andarChr);
-      
-      
-      if(msg[3]  == 's'){
-        elevador->andaresPressionados[andar] = subindo;
-      }
-      else{
-        elevador->andaresPressionados[andar] = descendo;
-      }     
-    }
-    
-    
-    //Botao interno
-    else if(msg[0] == 'I'){
-      
-      UINT andar = msg[1]-97;
-      
-      
-      
-      elevador->andaresPressionados[andar] = 1;
-      
-      // elevador->destinoAndar = msg[1]-97;
-    }
-    
-    //Status do elevador
-    else{
-      
-      
-      //Porta aberta ou fechada
-      if(msg[0] == 'A' || msg[0] == 'F'){
-        
-      }
-      else{
-        elevador->ultimoAndar= atoi(msg);
-      }
-    }
+    //Processa a mensagem
+    elevador_processa_msg(elevador,msg);
     
     
     //Atua na mensagem
-    
-    if(elevador->direcao == parado){
-      for (UINT i=0;i<NUM_ANDARES;i++){
-        if(elevador->andaresPressionados[i] !=  0){
-          elevador->destinoAndar = i;
-        }
-      }
-      
-      if(elevador->destinoAndar > elevador->ultimoAndar){
-        elevador->direcao = subindo;
-        elevador_fecha(elevador);
-        tx_thread_sleep(50);
-        elevador_sobe(elevador);
-      }else if(elevador->destinoAndar < elevador->ultimoAndar){
-        elevador->direcao = descendo;
-        elevador_fecha(elevador);
-        tx_thread_sleep(50);
-        elevador_desce(elevador);
-      }
-    }
-    else if(elevador->direcao == subindo){
-      
-      
-      if(elevador->destinoAndar == elevador->ultimoAndar){
-        
-        elevador_para(elevador);
-        elevador_abre(elevador);
-        elevador->andaresPressionados[elevador->destinoAndar] =  0;
-        tx_thread_sleep(TEMPO_PARADO);
-        
-        
-        
-        //Checa se existe algum andar acima deste pressionado
-        UINT proximo_andar = 16;
-        for (UINT i=0;i<NUM_ANDARES;i++){
-          
-          
-          if(elevador->andaresPressionados[i] !=  0 && i > elevador->destinoAndar){
-            if(i < proximo_andar){
-              proximo_andar = i;
-            }
-          }
-        }
-        
-        if(proximo_andar < 16){
-          elevador->destinoAndar = proximo_andar;
-          elevador_fecha(elevador);
-          tx_thread_sleep(50);
-          elevador_sobe(elevador);
-        }
-        
-        if(elevador->destinoAndar == elevador->ultimoAndar){
-          elevador->direcao = parado;
-        }    
-      }
-      
-    }
-    else if(elevador->direcao == descendo){
-      if(elevador->destinoAndar == elevador->ultimoAndar){
-        elevador_para(elevador);
-        elevador_abre(elevador);
-        elevador->andaresPressionados[elevador->destinoAndar] =  0;
-        tx_thread_sleep(TEMPO_PARADO);
-        
-        
-        
-        //Checa se existe algum andar acima deste pressionado
-        INT proximo_andar = -1;
-        for (UINT i=0;i<NUM_ANDARES;i++){
-          
-          
-          if(elevador->andaresPressionados[i] !=  0 && i < elevador->destinoAndar){
-            if(i > proximo_andar){
-              proximo_andar = i;
-            }
-          }
-        }
-        
-        if(proximo_andar >= 0){
-          elevador->destinoAndar = proximo_andar;
-          elevador_fecha(elevador);
-          tx_thread_sleep(50);
-          elevador_desce(elevador);
-        }
-        
-        if(elevador->destinoAndar == elevador->ultimoAndar){
-          elevador->direcao = parado;
-        }    
-      }
-    }
+    elevador_update(elevador);
   }
   
   

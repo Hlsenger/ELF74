@@ -20,5 +20,7 @@ void charBufferAdd(CharBuffer *buffer,CHAR data);
 bool charBufferGet(CharBuffer *buffer, CHAR *data);
 bool charBufferIsEmpty(CharBuffer *buffer);
 
+void charBufferSkip(CharBuffer *buffer);
+
 
 #endif
