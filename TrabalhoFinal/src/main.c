@@ -265,7 +265,6 @@ void  thread_serial_service(ULONG thread_input)
     if(status == TX_SUCCESS){
       if(flags & RECIEVE_FLAG){
         uint32_t i = 0;
-        
         a = 0;
         while(!charBufferIsEmpty(&uart0Buffer))
         {
@@ -274,9 +273,7 @@ void  thread_serial_service(ULONG thread_input)
         }
         
         parse_cmd(serial_in_data);
-      }
-      
-      
+      } 
     }
     
     if(flags & SEND_FLAG){

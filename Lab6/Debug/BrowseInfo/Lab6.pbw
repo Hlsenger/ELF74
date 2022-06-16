@@ -29122,384 +29122,6 @@
     "scope": null
   },
   {
-    "ID": "c:DLib_Product.h@75@macro@_DLIB_PRODUCTS_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCTS_H_",
-    "location": {
-      "column": "9",
-      "line": "4",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCTS_H_",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@524@macro@_DLIB_WIDE_CHARACTERS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_WIDE_CHARACTERS",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_WIDE_CHARACTERS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@680@macro@_DLIB_PRODUCT_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCT_STRING",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCT_STRING",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@831@macro@_DLIB_PRODUCT_FENV",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCT_FENV",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCT_FENV",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@984@macro@_DLIB_PRODUCT_STDLIB",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCT_STDLIB",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCT_STDLIB",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1095@macro@_DLIB_QSORT_BUF_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_QSORT_BUF_SIZE",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_QSORT_BUF_SIZE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1270@macro@_DLIB_SUPPORT_FOR_AEABI",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_SUPPORT_FOR_AEABI",
-    "location": {
-      "column": "9",
-      "line": "46",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_SUPPORT_FOR_AEABI",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1353@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "location": {
-      "column": "9",
-      "line": "49",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1479@macro@_DLIB_STRTOD_HEX_FLOAT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_STRTOD_HEX_FLOAT",
-    "location": {
-      "column": "9",
-      "line": "53",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_STRTOD_HEX_FLOAT",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1833@macro@_USE_ATOMIC_OPS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_USE_ATOMIC_OPS",
-    "location": {
-      "column": "11",
-      "line": "65",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_USE_ATOMIC_OPS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1958@macro@__SOFTFP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__SOFTFP",
-    "location": {
-      "column": "11",
-      "line": "70",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "__SOFTFP",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2082@macro@__NO_SCRATCH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__NO_SCRATCH",
-    "location": {
-      "column": "9",
-      "line": "74",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "__NO_SCRATCH",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2206@macro@_DLIB_SPEEDY_FLOATS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_SPEEDY_FLOATS",
-    "location": {
-      "column": "9",
-      "line": "77",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_SPEEDY_FLOATS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2267@macro@_DLIB_TIME_USES_64_DEFAULT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_TIME_USES_64_DEFAULT",
-    "location": {
-      "column": "9",
-      "line": "80",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_TIME_USES_64_DEFAULT",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2380@macro@_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
-    "location": {
-      "column": "11",
-      "line": "84",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2464@macro@_DLIB_ELF_INIT_STATIC_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_STATIC_BASE",
-    "location": {
-      "column": "11",
-      "line": "85",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_STATIC_BASE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2511@macro@_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
-    "location": {
-      "column": "11",
-      "line": "86",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2871@macro@_DLIB_ELF_INIT_TABLE_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_TABLE_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_TABLE_MEMORY",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2921@macro@_DLIB_ELF_INIT_SOURCE_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_SOURCE_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "97",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_SOURCE_MEMORY",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2971@macro@_DLIB_ELF_INIT_DESTINATION_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "98",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3119@macro@_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
-    "location": {
-      "column": "11",
-      "line": "103",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3180@macro@_DLIB_ELF_INIT_REGION_COUNT_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
-    "location": {
-      "column": "9",
-      "line": "105",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3609@macro@_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
-    "location": {
-      "column": "9",
-      "line": "115",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@4021@macro@_DLIB_ELF_INIT_INTERFACE_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_INTERFACE_VERSION",
-    "location": {
-      "column": "9",
-      "line": "124",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_INTERFACE_VERSION",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@4067@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "location": {
-      "column": "9",
-      "line": "126",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@4119@macro@_XMATHWRAPPERS_DEF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_XMATHWRAPPERS_DEF",
-    "location": {
-      "column": "9",
-      "line": "128",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_XMATHWRAPPERS_DEF",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@4168@macro@_CPPINIT_ATTR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_CPPINIT_ATTR",
-    "location": {
-      "column": "9",
-      "line": "130",
-      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_CPPINIT_ATTR",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:iar_intrinsics_common.h@339@macro@_IAR_COMMON_ACLE_INTRINSICS_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -30048,13 +29670,27 @@
     "scope": null
   },
   {
+    "ID": "c:@mutex_0",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "mutex_0",
+    "location": {
+      "column": "25",
+      "line": "36",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
+    },
+    "name": "mutex_0",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@byte_pool_memory",
     "What": "Variable",
     "defdec": "Dec",
     "display": "byte_pool_memory",
     "location": {
       "column": "25",
-      "line": "40",
+      "line": "41",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "byte_pool_memory",
@@ -30068,7 +29704,7 @@
     "display": "thread_0_counter",
     "location": {
       "column": "25",
-      "line": "44",
+      "line": "45",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "thread_0_counter",
@@ -30082,7 +29718,7 @@
     "display": "thread_1_counter",
     "location": {
       "column": "25",
-      "line": "45",
+      "line": "46",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "thread_1_counter",
@@ -30096,7 +29732,7 @@
     "display": "led1",
     "location": {
       "column": "6",
-      "line": "49",
+      "line": "50",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "led1",
@@ -30110,7 +29746,7 @@
     "display": "led2",
     "location": {
       "column": "6",
-      "line": "50",
+      "line": "51",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "led2",
@@ -30124,7 +29760,7 @@
     "display": "sysClock",
     "location": {
       "column": "10",
-      "line": "52",
+      "line": "53",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "sysClock",
@@ -30138,7 +29774,7 @@
     "display": "void thread_led(ULONG)",
     "location": {
       "column": "6",
-      "line": "57",
+      "line": "58",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "thread_led",
@@ -30152,7 +29788,7 @@
     "display": "void tiva_setup(void)",
     "location": {
       "column": "6",
-      "line": "64",
+      "line": "65",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "tiva_setup",
@@ -30166,7 +29802,7 @@
     "display": "t1",
     "location": {
       "column": "13",
-      "line": "67",
+      "line": "68",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "t1",
@@ -30180,7 +29816,7 @@
     "display": "t2",
     "location": {
       "column": "13",
-      "line": "68",
+      "line": "69",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "t2",
@@ -30194,7 +29830,7 @@
     "display": "t3",
     "location": {
       "column": "13",
-      "line": "69",
+      "line": "70",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "t3",
@@ -30208,7 +29844,7 @@
     "display": "void tiva_setup(void)",
     "location": {
       "column": "6",
-      "line": "72",
+      "line": "76",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "tiva_setup",
@@ -30222,7 +29858,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "104",
+      "line": "108",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "main",
@@ -30230,16 +29866,30 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@2234@macro@MODO_1_TIMESLICE",
+    "ID": "c:lab6.c@2526@macro@MODO_6_MUTEX_HERANCA",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "MODO_1_TIMESLICE",
+    "display": "MODO_6_MUTEX_HERANCA",
     "location": {
       "column": "9",
-      "line": "116",
+      "line": "125",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
-    "name": "MODO_1_TIMESLICE",
+    "name": "MODO_6_MUTEX_HERANCA",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lab6.c@2651@macro@MODO_3_PREEMPTIVO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MODO_3_PREEMPTIVO",
+    "location": {
+      "column": "9",
+      "line": "135",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
+    },
+    "name": "MODO_3_PREEMPTIVO",
     "origin": "project_file",
     "scope": null
   },
@@ -30250,7 +29900,7 @@
     "display": "void tx_application_define(void *)",
     "location": {
       "column": "9",
-      "line": "121",
+      "line": "138",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "tx_application_define",
@@ -30258,13 +29908,13 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@2412@F@tx_application_define@sp",
+    "ID": "c:lab6.c@2755@F@tx_application_define@sp",
     "What": "Variable",
     "defdec": "Def",
     "display": "sp",
     "location": {
       "column": "9",
-      "line": "126",
+      "line": "143",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "sp",
@@ -30272,13 +29922,13 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@2572@F@tx_application_define@i",
+    "ID": "c:lab6.c@2917@F@tx_application_define@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "132",
+      "line": "149",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "i",
@@ -30292,7 +29942,7 @@
     "display": "void rotina_led(UINT, UINT)",
     "location": {
       "column": "6",
-      "line": "170",
+      "line": "196",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "rotina_led",
@@ -30300,13 +29950,13 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@3954@F@rotina_led@i",
+    "ID": "c:lab6.c@4484@F@rotina_led@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "8",
-      "line": "171",
+      "line": "197",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "i",
@@ -30314,13 +29964,13 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@3967@F@rotina_led@led_port",
+    "ID": "c:lab6.c@4497@F@rotina_led@led_port",
     "What": "Variable",
     "defdec": "Def",
     "display": "led_port",
     "location": {
       "column": "8",
-      "line": "172",
+      "line": "198",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "led_port",
@@ -30328,13 +29978,13 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@3985@F@rotina_led@led_pin",
+    "ID": "c:lab6.c@4515@F@rotina_led@led_pin",
     "What": "Variable",
     "defdec": "Def",
     "display": "led_pin",
     "location": {
       "column": "8",
-      "line": "173",
+      "line": "199",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "led_pin",
@@ -30348,7 +29998,7 @@
     "display": "void thread_led(ULONG)",
     "location": {
       "column": "6",
-      "line": "208",
+      "line": "234",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "thread_led",
@@ -30356,17 +30006,395 @@
     "scope": null
   },
   {
-    "ID": "c:lab6.c@4653@F@thread_led@in",
+    "ID": "c:lab6.c@5178@F@thread_led@in",
     "What": "Variable",
     "defdec": "Def",
     "display": "in",
     "location": {
       "column": "16",
-      "line": "210",
+      "line": "236",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab6\\src\\lab6.c"
     },
     "name": "in",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@75@macro@_DLIB_PRODUCTS_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCTS_H_",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCTS_H_",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@524@macro@_DLIB_WIDE_CHARACTERS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_WIDE_CHARACTERS",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_WIDE_CHARACTERS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@680@macro@_DLIB_PRODUCT_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCT_STRING",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCT_STRING",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@831@macro@_DLIB_PRODUCT_FENV",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCT_FENV",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCT_FENV",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@984@macro@_DLIB_PRODUCT_STDLIB",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCT_STDLIB",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCT_STDLIB",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1095@macro@_DLIB_QSORT_BUF_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_QSORT_BUF_SIZE",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_QSORT_BUF_SIZE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1270@macro@_DLIB_SUPPORT_FOR_AEABI",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_SUPPORT_FOR_AEABI",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_SUPPORT_FOR_AEABI",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1353@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1479@macro@_DLIB_STRTOD_HEX_FLOAT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_STRTOD_HEX_FLOAT",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_STRTOD_HEX_FLOAT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1833@macro@_USE_ATOMIC_OPS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_USE_ATOMIC_OPS",
+    "location": {
+      "column": "11",
+      "line": "65",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_USE_ATOMIC_OPS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1958@macro@__SOFTFP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__SOFTFP",
+    "location": {
+      "column": "11",
+      "line": "70",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "__SOFTFP",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2082@macro@__NO_SCRATCH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__NO_SCRATCH",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "__NO_SCRATCH",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2206@macro@_DLIB_SPEEDY_FLOATS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_SPEEDY_FLOATS",
+    "location": {
+      "column": "9",
+      "line": "77",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_SPEEDY_FLOATS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2267@macro@_DLIB_TIME_USES_64_DEFAULT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_TIME_USES_64_DEFAULT",
+    "location": {
+      "column": "9",
+      "line": "80",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_TIME_USES_64_DEFAULT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2380@macro@_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
+    "location": {
+      "column": "11",
+      "line": "84",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2464@macro@_DLIB_ELF_INIT_STATIC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_STATIC_BASE",
+    "location": {
+      "column": "11",
+      "line": "85",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_STATIC_BASE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2511@macro@_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
+    "location": {
+      "column": "11",
+      "line": "86",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2871@macro@_DLIB_ELF_INIT_TABLE_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_TABLE_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_TABLE_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2921@macro@_DLIB_ELF_INIT_SOURCE_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_SOURCE_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "97",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_SOURCE_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2971@macro@_DLIB_ELF_INIT_DESTINATION_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "98",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3119@macro@_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
+    "location": {
+      "column": "11",
+      "line": "103",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3180@macro@_DLIB_ELF_INIT_REGION_COUNT_TYPE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
+    "location": {
+      "column": "9",
+      "line": "105",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3609@macro@_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
+    "location": {
+      "column": "9",
+      "line": "115",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@4021@macro@_DLIB_ELF_INIT_INTERFACE_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_INTERFACE_VERSION",
+    "location": {
+      "column": "9",
+      "line": "124",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_INTERFACE_VERSION",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@4067@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "location": {
+      "column": "9",
+      "line": "126",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@4119@macro@_XMATHWRAPPERS_DEF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_XMATHWRAPPERS_DEF",
+    "location": {
+      "column": "9",
+      "line": "128",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_XMATHWRAPPERS_DEF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@4168@macro@_CPPINIT_ATTR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_CPPINIT_ATTR",
+    "location": {
+      "column": "9",
+      "line": "130",
+      "path": "D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_CPPINIT_ATTR",
+    "origin": "system_include",
     "scope": null
   },
   {

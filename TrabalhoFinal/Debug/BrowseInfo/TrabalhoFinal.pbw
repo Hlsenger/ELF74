@@ -62646,13 +62646,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7268@F@thread_serial_service@msg",
+    "ID": "c:main.c@7243@F@thread_serial_service@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "12",
-      "line": "284",
+      "line": "281",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "msg",
@@ -62660,13 +62660,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7448@F@thread_serial_service@i",
+    "ID": "c:main.c@7423@F@thread_serial_service@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "20",
-      "line": "289",
+      "line": "286",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "i",
@@ -62680,7 +62680,7 @@
     "display": "void thread_elevador(ULONG)",
     "location": {
       "column": "7",
-      "line": "301",
+      "line": "298",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_elevador",
@@ -62688,13 +62688,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7693@F@thread_elevador@elevador",
+    "ID": "c:main.c@7668@F@thread_elevador@elevador",
     "What": "Variable",
     "defdec": "Def",
     "display": "elevador",
     "location": {
       "column": "13",
-      "line": "303",
+      "line": "300",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador",
@@ -62702,13 +62702,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7876@F@thread_elevador@msg",
+    "ID": "c:main.c@7851@F@thread_elevador@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "8",
-      "line": "311",
+      "line": "308",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "msg",

@@ -20,24 +20,15 @@ description of this demonstration.  */
 
 
 
-/* Define the ThreadX object control blocks...  */
-
+//Estruturas do Threadex utilizadas
 TX_THREAD               thread_0;
 TX_THREAD               thread_1;
 TX_BYTE_POOL            byte_pool_0;
-
-
-/* Define byte pool memory.  */
-
 UCHAR                   byte_pool_memory[BYTE_POOL_SIZE];
 
 
-/* Define the counters used in the demo application...  */
-ULONG                   thread_0_counter;
-ULONG                   thread_1_counter;
 
-
-//Satus dos leds
+//Status dos leds
 bool led1 = false;
 bool led2 = false;
 
@@ -45,21 +36,18 @@ uint32_t sysClock;
 
 
 
-/* Define thread prototypes.  */
+
+//Funções das threads
 void    thread_tled1(ULONG thread_input);
 void    thread_tled2(ULONG thread_input);
 
 
-
+//Configura o clock do TIVA e inicializa o periferico dos leds
 void tiva_setup();
 
 
 
 void tiva_setup(){
-  
-  
-  //SysCtlClockFreqSet(SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_OSC, 25000000);
-  
   sysClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
                          SYSCTL_OSC_MAIN |
                          SYSCTL_USE_PLL |
@@ -68,12 +56,8 @@ void tiva_setup(){
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)) {}
   GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0 | GPIO_PIN_1);
-  
-  
 }
 
-
-/* Define main entry point.  */
 
 int main()
 {
@@ -85,15 +69,12 @@ int main()
 }
 
 
-/* Define what the initial system looks like.  */
 
 void    tx_application_define(void *first_unused_memory)
 {
   
   CHAR    *pointer = TX_NULL;
   
-  
-  /* Create a byte memory pool from which to allocate the thread stacks.  */
   tx_byte_pool_create(&byte_pool_0, "byte pool 0", byte_pool_memory, BYTE_POOL_SIZE);
   
 
@@ -108,7 +89,6 @@ void    tx_application_define(void *first_unused_memory)
   tx_thread_create(&thread_1, "TLed2", thread_tled2, 1,  
                    pointer, THREAD_STACK_SIZE, 
                    1, 1, TX_NO_TIME_SLICE, TX_AUTO_START);
-  
   
 }
 

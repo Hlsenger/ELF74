@@ -34,3 +34,7 @@
 111	190	6754726575251200	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Exe/Lab5.out	d9a0b0b68757346a
 2	213	6754763048962042	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/lab5.o	700fc9860e4cd990
 220	310	6754763049925697	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Exe/Lab5.out	d9a0b0b68757346a
+1	371	6770997151054452	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/cstartup_M.o	4ad6ef9b87938f10
+364	385	6770997152912073	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/tx_initialize_low_level.o	9e868cac9628b346
+184	847	6770997157384686	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Obj/Source/lab5.o	700fc9860e4cd990
+854	1460	6770997163504393	E:/Faculdade/Sistemas Embarcados/Labs/Lab5/Debug/Exe/Lab5.out	d9a0b0b68757346a

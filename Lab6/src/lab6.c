@@ -33,6 +33,7 @@ typedef struct ThreadInput{
 
 TX_THREAD               threads[3];
 TX_BYTE_POOL            byte_pool_0;
+TX_MUTEX                mutex_0;
 
 
 /* Define byte pool memory.  */
@@ -69,15 +70,18 @@ ThreadInput t2 = {.num_led = 1, .num_ciclos = 287500, .tempo_sleep = 100};
 ThreadInput t3 = {.num_led = 2, .num_ciclos = 460000, .tempo_sleep = 320};
 
 
+
+
+
 void tiva_setup(){
   
   
   //SysCtlClockFreqSet(SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_OSC, 25000000);
   
   sysClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
-                         SYSCTL_OSC_MAIN |
-                         SYSCTL_USE_PLL |
-                         SYSCTL_CFG_VCO_480), 25000000);
+                                 SYSCTL_OSC_MAIN |
+                                   SYSCTL_USE_PLL |
+                                     SYSCTL_CFG_VCO_480), 25000000);
   
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
@@ -106,17 +110,30 @@ int main()
   tiva_setup();
   
   
- 
+  
   tx_kernel_enter();
 }
 
 
+//Descomente o define do modo desejedo. Apenas um modo deve estar definido de cada vez
 
-
-#define MODO_1_TIMESLICE
+//#define MODO_1_TIMESLICE
 //#define MODO_2_PRIORIDADES
 //#define MODO_3_PREEMPTIVO
 //#define MODO_4_MUTEX
+//#define MODO_5_MUTEX
+#define MODO_6_MUTEX_HERANCA
+
+
+
+
+#ifdef MODO_5_MUTEX
+#define MODO_3_PREEMPTIVO
+#endif
+
+#ifdef MODO_6_MUTEX_HERANCA
+#define MODO_3_PREEMPTIVO
+#endif
 
 void    tx_application_define(void *first_unused_memory)
 {
@@ -127,7 +144,7 @@ void    tx_application_define(void *first_unused_memory)
   
   
   tx_byte_pool_create(&byte_pool_0, "byte pool 0", byte_pool_memory, BYTE_POOL_SIZE);
-
+  
   
   for(UINT i=0;i<3;i++){
     tx_byte_allocate(&byte_pool_0, (VOID **) &sp[i], THREAD_STACK_SIZE, TX_NO_WAIT);
@@ -160,9 +177,18 @@ void    tx_application_define(void *first_unused_memory)
   tx_thread_create(&threads[2], "T3", thread_led, (ULONG) &t3,  sp[2], THREAD_STACK_SIZE, 3, 3, 5, TX_AUTO_START);
 #endif
   
-
   
-
+  
+#ifdef COM_MUTEX
+  tx_mutex_create(&mutex_0, "mutex 0", TX_NO_INHERIT);
+#endif
+  
+#ifdef COM_MUTEX_HERANCA
+  tx_mutex_create(&mutex_0, "mutex 0", TX_INHERIT);
+#endif
+  
+  
+  
   
   
 }
@@ -195,11 +221,11 @@ void rotina_led(UINT num_ciclos, UINT num_led){
   for(i=0;i<num_ciclos;i++){
     
     //Acende
-     GPIOPinWrite(led_port, led_pin, led_pin);
-     
-     //Apaga todos os leds
-     GPIOPinWrite(GPIO_PORTN_BASE, 0xFF, 0x0);
-     GPIOPinWrite(GPIO_PORTF_BASE, 0xFF, 0x0);
+    GPIOPinWrite(led_port, led_pin, led_pin);
+    
+    //Apaga todos os leds
+    GPIOPinWrite(GPIO_PORTN_BASE, 0xFF, 0x0);
+    GPIOPinWrite(GPIO_PORTF_BASE, 0xFF, 0x0);
     
   }
   
@@ -211,8 +237,16 @@ void thread_led(ULONG input)
   
   while(1)
   {
+#ifdef COM_MUTEX
+    if( in->num_led == 0 || in->num_led == 2) tx_mutex_get(&mutex_0, TX_WAIT_FOREVER);
+#endif
     rotina_led(in->num_ciclos,in->num_led);
     
+    
+    
+#ifdef COM_MUTEX
+     if( in->num_led == 0 || in->num_led == 2) tx_mutex_put(&mutex_0);
+#endif
     tx_thread_sleep(in->tempo_sleep);
   }
   

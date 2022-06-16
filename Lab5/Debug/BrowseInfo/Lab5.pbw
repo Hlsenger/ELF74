@@ -29576,7 +29576,7 @@
     "display": "thread_0",
     "location": {
       "column": "25",
-      "line": "25",
+      "line": "24",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "thread_0",
@@ -29590,7 +29590,7 @@
     "display": "thread_1",
     "location": {
       "column": "25",
-      "line": "26",
+      "line": "25",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "thread_1",
@@ -29604,7 +29604,7 @@
     "display": "byte_pool_0",
     "location": {
       "column": "25",
-      "line": "27",
+      "line": "26",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "byte_pool_0",
@@ -29618,38 +29618,10 @@
     "display": "byte_pool_memory",
     "location": {
       "column": "25",
-      "line": "32",
+      "line": "27",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "byte_pool_memory",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@thread_0_counter",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "thread_0_counter",
-    "location": {
-      "column": "25",
-      "line": "36",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
-    },
-    "name": "thread_0_counter",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@thread_1_counter",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "thread_1_counter",
-    "location": {
-      "column": "25",
-      "line": "37",
-      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
-    },
-    "name": "thread_1_counter",
     "origin": "project_file",
     "scope": null
   },
@@ -29660,7 +29632,7 @@
     "display": "led1",
     "location": {
       "column": "6",
-      "line": "41",
+      "line": "32",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "led1",
@@ -29674,7 +29646,7 @@
     "display": "led2",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "33",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "led2",
@@ -29688,7 +29660,7 @@
     "display": "sysClock",
     "location": {
       "column": "10",
-      "line": "44",
+      "line": "35",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "sysClock",
@@ -29702,7 +29674,7 @@
     "display": "void thread_tled1(ULONG)",
     "location": {
       "column": "9",
-      "line": "49",
+      "line": "41",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "thread_tled1",
@@ -29716,7 +29688,7 @@
     "display": "void thread_tled2(ULONG)",
     "location": {
       "column": "9",
-      "line": "50",
+      "line": "42",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "thread_tled2",
@@ -29730,7 +29702,7 @@
     "display": "void tiva_setup(void)",
     "location": {
       "column": "6",
-      "line": "54",
+      "line": "46",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "tiva_setup",
@@ -29744,7 +29716,7 @@
     "display": "void tiva_setup(void)",
     "location": {
       "column": "6",
-      "line": "58",
+      "line": "50",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "tiva_setup",
@@ -29758,7 +29730,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "78",
+      "line": "62",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "main",
@@ -29772,7 +29744,7 @@
     "display": "void tx_application_define(void *)",
     "location": {
       "column": "9",
-      "line": "90",
+      "line": "73",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "tx_application_define",
@@ -29780,13 +29752,13 @@
     "scope": null
   },
   {
-    "ID": "c:lab5.c@2041@F@tx_application_define@pointer",
+    "ID": "c:lab5.c@1696@F@tx_application_define@pointer",
     "What": "Variable",
     "defdec": "Def",
     "display": "pointer",
     "location": {
       "column": "12",
-      "line": "93",
+      "line": "76",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "pointer",
@@ -29800,7 +29772,7 @@
     "display": "void thread_tled1(ULONG)",
     "location": {
       "column": "9",
-      "line": "117",
+      "line": "97",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "thread_tled1",
@@ -29814,7 +29786,7 @@
     "display": "void thread_tled2(ULONG)",
     "location": {
       "column": "9",
-      "line": "128",
+      "line": "108",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\Lab5\\src\\lab5.c"
     },
     "name": "thread_tled2",
