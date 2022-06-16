@@ -90,3 +90,9 @@
 217	326	6769305282670633	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Exe/TrabalhoFinal.out	61ac029ac880032c
 2	205	6769306142985788	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Obj/Source/main.o	313f81039c3f2b62
 212	317	6769306144135924	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Exe/TrabalhoFinal.out	61ac029ac880032c
+2	39	6771084507324761	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Obj/Source/cstartup_M.o	b6f76e3e8922f0b1
+7	47	6771084507324761	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Obj/Source/tx_initialize_low_level.o	2081a6c2fbcceb20
+9	261	6771084509422410	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Obj/Source/charbuffer.o	b2efe99c64e18d3e
+42	356	6771084510329729	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Obj/Source/elevador.o	b5b1f72073d88914
+16	410	6771084510954733	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Obj/Source/main.o	313f81039c3f2b62
+418	651	6771084513281295	E:/Faculdade/Sistemas Embarcados/Labs/TrabalhoFinal/Debug/Exe/TrabalhoFinal.out	61ac029ac880032c

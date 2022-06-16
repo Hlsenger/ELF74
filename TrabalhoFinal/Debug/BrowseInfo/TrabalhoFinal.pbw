@@ -62568,7 +62568,7 @@
     "display": "void thread_serial_service(ULONG)",
     "location": {
       "column": "7",
-      "line": "253",
+      "line": "252",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_serial_service",
@@ -62576,13 +62576,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6664@F@thread_serial_service@status",
+    "ID": "c:main.c@6660@F@thread_serial_service@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
     "location": {
       "column": "8",
-      "line": "255",
+      "line": "254",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "status",
@@ -62590,13 +62590,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6680@F@thread_serial_service@flags",
+    "ID": "c:main.c@6676@F@thread_serial_service@flags",
     "What": "Variable",
     "defdec": "Def",
     "display": "flags",
     "location": {
       "column": "9",
-      "line": "256",
+      "line": "255",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "flags",
@@ -62604,13 +62604,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6696@F@thread_serial_service@a",
+    "ID": "c:main.c@6692@F@thread_serial_service@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "8",
-      "line": "257",
+      "line": "256",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "a",
@@ -62618,13 +62618,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6711@F@thread_serial_service@serial_in_data",
+    "ID": "c:main.c@6707@F@thread_serial_service@serial_in_data",
     "What": "Variable",
     "defdec": "Def",
     "display": "serial_in_data",
     "location": {
       "column": "8",
-      "line": "259",
+      "line": "258",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "serial_in_data",
@@ -62632,13 +62632,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6949@F@thread_serial_service@i",
+    "ID": "c:main.c@6945@F@thread_serial_service@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "267",
+      "line": "266",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "i",
@@ -62646,13 +62646,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7243@F@thread_serial_service@msg",
+    "ID": "c:main.c@7239@F@thread_serial_service@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "12",
-      "line": "281",
+      "line": "280",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "msg",
@@ -62660,13 +62660,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7423@F@thread_serial_service@i",
+    "ID": "c:main.c@7419@F@thread_serial_service@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "20",
-      "line": "286",
+      "line": "285",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "i",
@@ -62680,7 +62680,7 @@
     "display": "void thread_elevador(ULONG)",
     "location": {
       "column": "7",
-      "line": "298",
+      "line": "297",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "thread_elevador",
@@ -62688,13 +62688,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7668@F@thread_elevador@elevador",
+    "ID": "c:main.c@7664@F@thread_elevador@elevador",
     "What": "Variable",
     "defdec": "Def",
     "display": "elevador",
     "location": {
       "column": "13",
-      "line": "300",
+      "line": "299",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "elevador",
@@ -62702,13 +62702,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7851@F@thread_elevador@msg",
+    "ID": "c:main.c@7847@F@thread_elevador@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "8",
-      "line": "308",
+      "line": "307",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\main.c"
     },
     "name": "msg",

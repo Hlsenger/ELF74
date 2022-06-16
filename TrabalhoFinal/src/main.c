@@ -213,8 +213,7 @@ void    tx_application_define(void *first_unused_memory)
 
 void parse_cmd(CHAR *cmd){
   CHAR elevador = cmd[0];
-
-    
+  
   switch(elevador){
   case 'e':
     tx_queue_send(&queue_e, &(cmd[1]), TX_NO_WAIT);
