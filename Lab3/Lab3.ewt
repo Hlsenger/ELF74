@@ -2848,7 +2848,10 @@
     <group>
         <name>Source</name>
         <file>
-            <name>$PROJ_DIR$\src\eightbithistogram.s</name>
+            <name>$PROJ_DIR$\src\asm.s</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\images.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\src\main.cpp</name>

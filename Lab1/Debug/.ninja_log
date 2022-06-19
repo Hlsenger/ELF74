@@ -1,17 +1,5 @@
 # ninja log v5
-0	543	6688277449784648	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Obj/main.o	1c364967b38ea4c3
-550	640	6688277451054254	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Exe/Lab1.out	ce95e7e8b4dd2743
-2	425	6688285329095912	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Obj/main.o	1c364967b38ea4c3
-432	512	6688285330033281	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Exe/Lab1.out	ce95e7e8b4dd2743
-1	779	6688287461642210	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Obj/main.o	1c364967b38ea4c3
-786	882	6688287462735873	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Exe/Lab1.out	ce95e7e8b4dd2743
-2	999	6688288674731410	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Obj/main.o	1c364967b38ea4c3
-1006	1146	6688288676293891	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Exe/Lab1.out	ce95e7e8b4dd2743
-2	1092	6688358322440079	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Obj/main.o	1c364967b38ea4c3
-1100	1237	6688358323940831	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Exe/Lab1.out	ce95e7e8b4dd2743
-2	1850	6692661227281269	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Obj/main.o	4397d482dfb96752
-1855	2411	6692661233021243	E:/Faculdade/Sistemas Embarcados/dr_Tiva_Template-trunk/Lab1/Debug/Exe/Lab1.out	ce95e7e8b4dd2743
-0	1851	6692670011636001	E:/Faculdade/Sistemas Embarcados/Labs/Lab1/Debug/Obj/main.o	272fdaa196f309e0
-1856	2049	6692670013715327	E:/Faculdade/Sistemas Embarcados/Labs/Lab1/Debug/Exe/Lab1.out	99e2ce3bc06d042a
-0	1406	6699563142970301	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab1/Debug/Obj/main.o	d79ac319c0bdeee1
-1412	2001	6699563149142849	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab1/Debug/Exe/Lab1.out	985c4269f723099e
+1	1183	6773039844845165	E:/Faculdade/Sistemas Embarcados/Labs/Lab1/Debug/Obj/main.o	272fdaa196f309e0
+1191	1338	6773039846562769	E:/Faculdade/Sistemas Embarcados/Labs/Lab1/Debug/Exe/Lab1.out	99e2ce3bc06d042a
+1	1086	6773040827064014	E:/Faculdade/Sistemas Embarcados/Labs/Lab1/Debug/Obj/main.o	272fdaa196f309e0
+1093	1241	6773040828661711	E:/Faculdade/Sistemas Embarcados/Labs/Lab1/Debug/Exe/Lab1.out	99e2ce3bc06d042a

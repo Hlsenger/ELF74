@@ -22998,7 +22998,7 @@
     "display": "void elevador_reset(Elevador *)",
     "location": {
       "column": "6",
-      "line": "18",
+      "line": "20",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_reset",
@@ -23012,7 +23012,7 @@
     "display": "void elevador_processa_msg(Elevador *, CHAR *)",
     "location": {
       "column": "6",
-      "line": "29",
+      "line": "31",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_processa_msg",
@@ -23020,13 +23020,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@805@F@elevador_processa_msg@andarChr",
+    "ID": "c:elevador.c@850@F@elevador_processa_msg@andarChr",
     "What": "Variable",
     "defdec": "Def",
     "display": "andarChr",
     "location": {
       "column": "10",
-      "line": "32",
+      "line": "34",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "andarChr",
@@ -23034,13 +23034,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@857@F@elevador_processa_msg@andar",
+    "ID": "c:elevador.c@902@F@elevador_processa_msg@andar",
     "What": "Variable",
     "defdec": "Def",
     "display": "andar",
     "location": {
       "column": "10",
-      "line": "33",
+      "line": "35",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "andar",
@@ -23048,13 +23048,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@1130@F@elevador_processa_msg@andar",
+    "ID": "c:elevador.c@1175@F@elevador_processa_msg@andar",
     "What": "Variable",
     "defdec": "Def",
     "display": "andar",
     "location": {
       "column": "10",
-      "line": "45",
+      "line": "47",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "andar",
@@ -23068,7 +23068,7 @@
     "display": "void elevador_update(Elevador *)",
     "location": {
       "column": "6",
-      "line": "62",
+      "line": "67",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_update",
@@ -23076,13 +23076,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@1539@F@elevador_update@i",
+    "ID": "c:elevador.c@1686@F@elevador_update@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "15",
-      "line": "64",
+      "line": "69",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "i",
@@ -23090,13 +23090,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@2423@F@elevador_update@proximo_andar",
+    "ID": "c:elevador.c@2570@F@elevador_update@proximo_andar",
     "What": "Variable",
     "defdec": "Def",
     "display": "proximo_andar",
     "location": {
       "column": "12",
-      "line": "91",
+      "line": "96",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "proximo_andar",
@@ -23104,13 +23104,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@2469@F@elevador_update@i",
+    "ID": "c:elevador.c@2616@F@elevador_update@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "92",
+      "line": "97",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "i",
@@ -23118,13 +23118,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@3403@F@elevador_update@proximo_andar",
+    "ID": "c:elevador.c@3550@F@elevador_update@proximo_andar",
     "What": "Variable",
     "defdec": "Def",
     "display": "proximo_andar",
     "location": {
       "column": "11",
-      "line": "125",
+      "line": "130",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "proximo_andar",
@@ -23132,13 +23132,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@3439@F@elevador_update@i",
+    "ID": "c:elevador.c@3586@F@elevador_update@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "126",
+      "line": "131",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "i",
@@ -23152,7 +23152,7 @@
     "display": "void elevador_sobe(Elevador *)",
     "location": {
       "column": "6",
-      "line": "151",
+      "line": "156",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_sobe",
@@ -23160,13 +23160,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@4048@F@elevador_sobe@out",
+    "ID": "c:elevador.c@4195@F@elevador_sobe@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "152",
+      "line": "157",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23180,7 +23180,7 @@
     "display": "void elevador_desce(Elevador *)",
     "location": {
       "column": "6",
-      "line": "163",
+      "line": "168",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_desce",
@@ -23188,13 +23188,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@4310@F@elevador_desce@out",
+    "ID": "c:elevador.c@4457@F@elevador_desce@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "164",
+      "line": "169",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23208,7 +23208,7 @@
     "display": "void elevador_para(Elevador *)",
     "location": {
       "column": "6",
-      "line": "175",
+      "line": "180",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_para",
@@ -23216,13 +23216,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@4571@F@elevador_para@out",
+    "ID": "c:elevador.c@4718@F@elevador_para@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "176",
+      "line": "181",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23236,7 +23236,7 @@
     "display": "void elevador_abre(Elevador *)",
     "location": {
       "column": "6",
-      "line": "187",
+      "line": "192",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_abre",
@@ -23244,13 +23244,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@4830@F@elevador_abre@out",
+    "ID": "c:elevador.c@4977@F@elevador_abre@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "188",
+      "line": "193",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23264,7 +23264,7 @@
     "display": "void elevador_fecha(Elevador *)",
     "location": {
       "column": "6",
-      "line": "197",
+      "line": "202",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "elevador_fecha",
@@ -23272,13 +23272,13 @@
     "scope": null
   },
   {
-    "ID": "c:elevador.c@5084@F@elevador_fecha@out",
+    "ID": "c:elevador.c@5231@F@elevador_fecha@out",
     "What": "Variable",
     "defdec": "Def",
     "display": "out",
     "location": {
       "column": "8",
-      "line": "198",
+      "line": "203",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.c"
     },
     "name": "out",
@@ -23878,13 +23878,57 @@
     "scope": null
   },
   {
+    "ID": "c:@E@porta",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "porta",
+    "fields": [
+      {
+        "ID": "c:@E@porta@porta_aberta",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "porta_aberta",
+        "location": {
+          "column": "12",
+          "line": "14",
+          "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
+        },
+        "name": "porta_aberta",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@porta@porta_fechada",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "porta_fechada",
+        "location": {
+          "column": "26",
+          "line": "14",
+          "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
+        },
+        "name": "porta_fechada",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "6",
+      "line": "14",
+      "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
+    },
+    "name": "porta",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@S@Elevador",
     "What": "Struct",
     "defdec": "Def",
     "display": "Elevador",
     "location": {
       "column": "16",
-      "line": "14",
+      "line": "16",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "members": [
@@ -23895,7 +23939,7 @@
         "display": "id",
         "location": {
           "column": "8",
-          "line": "15",
+          "line": "17",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "id",
@@ -23909,7 +23953,7 @@
         "display": "direcao",
         "location": {
           "column": "16",
-          "line": "16",
+          "line": "18",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "direcao",
@@ -23923,7 +23967,7 @@
         "display": "ultimoAndar",
         "location": {
           "column": "8",
-          "line": "17",
+          "line": "19",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "ultimoAndar",
@@ -23937,10 +23981,24 @@
         "display": "destinoAndar",
         "location": {
           "column": "8",
-          "line": "18",
+          "line": "20",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "destinoAndar",
+        "origin": "user_include",
+        "scope": "Elevador"
+      },
+      {
+        "ID": "c:@S@Elevador@FI@statusPorta",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "statusPorta",
+        "location": {
+          "column": "8",
+          "line": "21",
+          "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
+        },
+        "name": "statusPorta",
         "origin": "user_include",
         "scope": "Elevador"
       },
@@ -23951,7 +24009,7 @@
         "display": "queue_in",
         "location": {
           "column": "13",
-          "line": "19",
+          "line": "23",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "queue_in",
@@ -23965,7 +24023,7 @@
         "display": "queue_out",
         "location": {
           "column": "13",
-          "line": "20",
+          "line": "24",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "queue_out",
@@ -23979,7 +24037,7 @@
         "display": "uart_flags",
         "location": {
           "column": "25",
-          "line": "21",
+          "line": "25",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "uart_flags",
@@ -23993,7 +24051,7 @@
         "display": "andaresPressionados",
         "location": {
           "column": "8",
-          "line": "23",
+          "line": "27",
           "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
         },
         "name": "andaresPressionados",
@@ -24012,7 +24070,7 @@
     "display": "struct Elevador",
     "location": {
       "column": "3",
-      "line": "25",
+      "line": "29",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "Elevador",
@@ -24026,7 +24084,7 @@
     "display": "void elevador_inicializa(Elevador *, CHAR, TX_QUEUE *, TX_QUEUE *, TX_EVENT_FLAGS_GROUP *)",
     "location": {
       "column": "6",
-      "line": "27",
+      "line": "31",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_inicializa",
@@ -24040,7 +24098,7 @@
     "display": "void elevador_inicializa(Elevador *, CHAR, TX_QUEUE *, TX_QUEUE *, TX_EVENT_FLAGS_GROUP *)",
     "location": {
       "column": "6",
-      "line": "27",
+      "line": "31",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_inicializa",
@@ -24054,7 +24112,7 @@
     "display": "void elevador_reset(Elevador *)",
     "location": {
       "column": "6",
-      "line": "28",
+      "line": "32",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_reset",
@@ -24068,7 +24126,7 @@
     "display": "void elevador_reset(Elevador *)",
     "location": {
       "column": "6",
-      "line": "28",
+      "line": "32",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_reset",
@@ -24082,7 +24140,7 @@
     "display": "void elevador_processa_msg(Elevador *, CHAR *)",
     "location": {
       "column": "6",
-      "line": "30",
+      "line": "34",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_processa_msg",
@@ -24096,7 +24154,7 @@
     "display": "void elevador_processa_msg(Elevador *, CHAR *)",
     "location": {
       "column": "6",
-      "line": "30",
+      "line": "34",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_processa_msg",
@@ -24110,7 +24168,7 @@
     "display": "void elevador_update(Elevador *)",
     "location": {
       "column": "6",
-      "line": "31",
+      "line": "35",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_update",
@@ -24124,7 +24182,7 @@
     "display": "void elevador_update(Elevador *)",
     "location": {
       "column": "6",
-      "line": "31",
+      "line": "35",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_update",
@@ -24138,7 +24196,7 @@
     "display": "void elevador_sobe(Elevador *)",
     "location": {
       "column": "6",
-      "line": "35",
+      "line": "39",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_sobe",
@@ -24152,7 +24210,7 @@
     "display": "void elevador_sobe(Elevador *)",
     "location": {
       "column": "6",
-      "line": "35",
+      "line": "39",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_sobe",
@@ -24166,7 +24224,7 @@
     "display": "void elevador_desce(Elevador *)",
     "location": {
       "column": "6",
-      "line": "36",
+      "line": "40",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_desce",
@@ -24180,7 +24238,7 @@
     "display": "void elevador_desce(Elevador *)",
     "location": {
       "column": "6",
-      "line": "36",
+      "line": "40",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_desce",
@@ -24194,7 +24252,7 @@
     "display": "void elevador_para(Elevador *)",
     "location": {
       "column": "6",
-      "line": "37",
+      "line": "41",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_para",
@@ -24208,7 +24266,7 @@
     "display": "void elevador_para(Elevador *)",
     "location": {
       "column": "6",
-      "line": "37",
+      "line": "41",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_para",
@@ -24222,7 +24280,7 @@
     "display": "void elevador_abre(Elevador *)",
     "location": {
       "column": "6",
-      "line": "38",
+      "line": "42",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_abre",
@@ -24236,7 +24294,7 @@
     "display": "void elevador_abre(Elevador *)",
     "location": {
       "column": "6",
-      "line": "38",
+      "line": "42",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_abre",
@@ -24250,7 +24308,7 @@
     "display": "void elevador_fecha(Elevador *)",
     "location": {
       "column": "6",
-      "line": "39",
+      "line": "43",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_fecha",
@@ -24264,7 +24322,7 @@
     "display": "void elevador_fecha(Elevador *)",
     "location": {
       "column": "6",
-      "line": "39",
+      "line": "43",
       "path": "E:\\Faculdade\\Sistemas Embarcados\\Labs\\TrabalhoFinal\\src\\elevador.h"
     },
     "name": "elevador_fecha",

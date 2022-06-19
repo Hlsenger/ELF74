@@ -24,6 +24,8 @@
 # IAR Debug List
 **/Debug/List
 
+**/Debug/
+
 # IAR Debug Obj
 **/Obj/*.pbd
 **/Obj/*.pbd.*

@@ -1073,7 +1073,7 @@
     <group>
         <name>Source</name>
         <file>
-            <name>$PROJ_DIR$\src\lab2.c</name>
+            <name>$PROJ_DIR$\src\main.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\src\startup_ewarm.c</name>

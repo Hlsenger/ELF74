@@ -56,3 +56,15 @@
 2	102	6699597643109959	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab2/ewarm/Obj/Source/lab2.o	78b3fe9004d787bb
 108	169	6699597643763023	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab2/ewarm/Exe/Lab2.out	9734043d5256f96a
 178	186	6699597644062541	E:/Faculdade/Sistemas Embarcados/Labs Entrega/Lab2/ewarm/Exe/Lab2.bin	f08e419c68c0c6d8
+7	244	6773036033071821	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/startup_ewarm.o	bbc794af22d3cafc
+0	310	6773036033741039	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/main.o	dce4d028ff3a8b76
+6	74	6773036105743898	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/startup_ewarm.o	bbc794af22d3cafc
+1	188	6773036106913612	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/main.o	dce4d028ff3a8b76
+6	75	6773037115822320	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/startup_ewarm.o	bbc794af22d3cafc
+1	188	6773037116961949	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/main.o	dce4d028ff3a8b76
+194	255	6773037117651891	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Exe/Lab2.out	d835f8828b647583
+263	339	6773037118549411	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Exe/Lab2.bin	e85380b1491b47fc
+5	88	6773041092866175	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/startup_ewarm.o	bbc794af22d3cafc
+1	204	6773041093985818	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Obj/Source/main.o	dce4d028ff3a8b76
+211	276	6773041094755750	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Exe/Lab2.out	d835f8828b647583
+283	296	6773041095035489	E:/Faculdade/Sistemas Embarcados/Labs/Lab2/ewarm/Exe/Lab2.bin	e85380b1491b47fc

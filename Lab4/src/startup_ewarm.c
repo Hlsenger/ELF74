@@ -45,7 +45,7 @@ static void FaultISR(void);
 static void IntDefaultHandler(void);
 
 
-extern void UARTIntHandler(void);
+extern void UARTHandler(void);
 
 
 //*****************************************************************************
@@ -106,7 +106,7 @@ __root const uVectorEntry __vector_table[] @ ".intvec" =
     IntDefaultHandler,                      // GPIO Port C
     IntDefaultHandler,                      // GPIO Port D
     IntDefaultHandler,                      // GPIO Port E
-    UARTIntHandler,                         // UART0 Rx and Tx
+    UARTHandler,                         // UART0 Rx and Tx
     IntDefaultHandler,                      // UART1 Rx and Tx
     IntDefaultHandler,                      // SSI0 Rx and Tx
     IntDefaultHandler,                      // I2C0 Master and Slave

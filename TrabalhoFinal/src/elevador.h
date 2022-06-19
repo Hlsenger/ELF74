@@ -11,11 +11,15 @@ enum StatusBotao{nao_pressionado,externo_sobe,externo_desce,interno};
 
 enum Direcao{parado, subindo, descendo};
 
+enum porta{porta_aberta, porta_fechada};
+
 typedef struct Elevador{
   CHAR id;
   enum Direcao direcao;
   UINT ultimoAndar;
   UINT destinoAndar;
+  CHAR statusPorta;
+  
   TX_QUEUE *queue_in;
   TX_QUEUE *queue_out;
   TX_EVENT_FLAGS_GROUP *uart_flags;

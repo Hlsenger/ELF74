@@ -11,6 +11,8 @@ void elevador_inicializa(Elevador *elevador, CHAR id,TX_QUEUE *queue_in, TX_QUEU
   elevador->destinoAndar = 0;
   elevador->ultimoAndar = 0;
   elevador->direcao = parado;
+  elevador->statusPorta = porta_aberta;
+  
   memset(elevador->andaresPressionados,nao_pressionado,NUM_ANDARES); 
 }
 
@@ -50,8 +52,11 @@ void elevador_processa_msg(Elevador *elevador, CHAR *msg){
   //Status do elevador
   else{
     //Porta aberta ou fechada
-    if(msg[0] == 'A' || msg[0] == 'F'){
-      
+    if(msg[0] == 'A'){
+      elevador->statusPorta = porta_aberta;
+    }
+    else if(msg[0] == 'F'){
+      elevador->statusPorta = porta_fechada;
     }
     else{
       elevador->ultimoAndar= atoi(msg);

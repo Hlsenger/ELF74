@@ -24,18 +24,18 @@ rule PDBLINK
 
 
 #Build steps
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.xcl : COMPILER_XCL 
-  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\src\main.cpp" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\src\main.cpp" -o "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --c++ --no_exceptions --no_rtti --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.tmp"
-  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.xcl.rsp
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\src\main.cpp" -xcl_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.xcl" -macro_file "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.tmp" -icc_path "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\src\main.cpp" -o "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\Obj\Source" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --c++ --no_exceptions --no_rtti --predef_macros "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.tmp"
+  rspfile_name = E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.xcl.rsp
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.xcl |  $
-E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\src\main.cpp
-  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.xcl"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.pbi : INDEXER E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.xcl |  $
+E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\src\main.cpp
+  flags = "-out=E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.pbi" -f "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.xcl"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Lab3.pbw : MAKEBROWSE E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Lab3.pbd
-  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Lab3.pbd" -output "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Lab3.pbw"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Lab3.pbw : MAKEBROWSE E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Lab3.pbd
+  flags = "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Lab3.pbd" -output "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Lab3.pbw"
 
-build E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Lab3.pbd : PDBLINK E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.pbi
-  flags = -M "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Lab3.pbd" "E$:\Faculdade\Sistemas$ Embarcados\Labs$ Entrega\Lab3\Debug\BrowseInfo\Source\main.pbi"
+build E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Lab3.pbd : PDBLINK E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.pbi
+  flags = -M "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Lab3.pbd" "E$:\Faculdade\Sistemas$ Embarcados\Labs\Lab3\Debug\BrowseInfo\Source\main.pbi"
 
