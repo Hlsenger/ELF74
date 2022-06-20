@@ -23,5 +23,8 @@ bool charBufferIsEmpty(CharBuffer *buffer){
 }
 
 void charBufferSkip(CharBuffer *buffer){
+   if(buffer->tail == buffer->head){
+    return;
+  }
   buffer->tail = (buffer->tail + 1) % CHAR_BUFFER_SIZE;
 }

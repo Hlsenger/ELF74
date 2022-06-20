@@ -214,6 +214,9 @@ void    tx_application_define(void *first_unused_memory)
 void parse_cmd(CHAR *cmd){
   CHAR elevador = cmd[0];
   
+  //Pula o /n gerado pelo 'initialized'
+   // charBufferSkip(&uart0Buffer);
+  
   switch(elevador){
   case 'e':
     tx_queue_send(&queue_e, &(cmd[1]), TX_NO_WAIT);
@@ -228,8 +231,7 @@ void parse_cmd(CHAR *cmd){
     break;
     
   case 'i':
-    //Pula o /n gerado pelo 'initialized'
-    charBufferSkip(&uart0Buffer);
+    
     
     //Reseta os 3 elevadores
     elevador_reset(&elevador_e);
@@ -255,7 +257,8 @@ void  thread_serial_service(ULONG thread_input)
   ULONG flags;
   CHAR a;
   
-  CHAR serial_in_data[32];
+  static CHAR serial_in_data[64];
+  static uint32_t i = 0;
   
   while(1)
   {
@@ -263,15 +266,20 @@ void  thread_serial_service(ULONG thread_input)
     status =  tx_event_flags_get(&uart0_flags, RECIEVE_FLAG | SEND_FLAG, TX_OR_CLEAR, &flags, TX_WAIT_FOREVER);
     if(status == TX_SUCCESS){
       if(flags & RECIEVE_FLAG){
-        uint32_t i = 0;
+        
         a = 0;
-        while(!charBufferIsEmpty(&uart0Buffer))
+        while(a != '\n' && !charBufferIsEmpty(&uart0Buffer))
         {
           charBufferGet(&uart0Buffer,&a);
           serial_in_data[i++] = a;
         }
         
-        parse_cmd(serial_in_data);
+        
+        if(a == '\n'){
+          parse_cmd(serial_in_data);
+          memset(serial_in_data,0,64);
+          i=0;
+        }
       } 
     }
     
