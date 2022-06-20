@@ -97,7 +97,7 @@ void elevador_update(Elevador *elevador){
       for (UINT i=0;i<NUM_ANDARES;i++){
         
         
-        if(elevador->andaresPressionados[i] !=  0 && i > elevador->destinoAndar){
+        if((elevador->andaresPressionados[i] == externo_sobe || elevador->andaresPressionados[i] == interno) && i > elevador->destinoAndar){
           if(i < proximo_andar){
             proximo_andar = i;
           }
@@ -126,12 +126,12 @@ void elevador_update(Elevador *elevador){
       
       
       
-      //Checa se existe algum andar acima deste pressionado
+      //Checa se existe algum andar abaixo deste pressionado
       INT proximo_andar = -1;
       for (UINT i=0;i<NUM_ANDARES;i++){
         
         
-        if(elevador->andaresPressionados[i] !=  0 && i < elevador->destinoAndar){
+        if((elevador->andaresPressionados[i] == externo_desce || elevador->andaresPressionados[i] == interno) && i < elevador->destinoAndar){
           if(i > proximo_andar){
             proximo_andar = i;
           }

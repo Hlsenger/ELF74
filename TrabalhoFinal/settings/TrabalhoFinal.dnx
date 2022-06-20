@@ -46,23 +46,23 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <PlDriver>
-        <FirstRun>0</FirstRun>
         <MemConfigValue>D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\TexasInstruments\TM4C1292NCPDT.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
     </PlDriver>
     <LmiFtdiDriver>
-        <LMIFTDIserialNo>0F800C6A</LMIFTDIserialNo>
-        <LMIFTDIfoundProbes>0F800C6A:FFFFFFFF:</LMIFTDIfoundProbes>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
         <CStepIntDis>_ 0</CStepIntDis>
         <LmiFtdiResetStyle>0</LmiFtdiResetStyle>
         <LmiFtdiResetStrategy>0</LmiFtdiResetStrategy>
+        <LMIFTDIserialNo>0F800C6A</LMIFTDIserialNo>
+        <LMIFTDIfoundProbes />
     </LmiFtdiDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>
         <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
     </ArmDriver>
     <DebugChecksum>
-        <Checksum>3773889120</Checksum>
+        <Checksum>3924947272</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -74,11 +74,6 @@
     <CallStack>
         <ShowArgs>0</ShowArgs>
     </CallStack>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
-        <Category2>_ 2</Category2>
-    </LogFile>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -89,10 +84,6 @@
     <Breakpoints2>
         <Count>0</Count>
     </Breakpoints2>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
     <Aliases>
         <A0>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\gpio.c" ""</A0>
         <A1>_ "E:\Faculdade\Sistemas Embarcados\Labs\TivaWare_C_Series-2.2.0.295\driverlib\interrupt.c" ""</A1>
@@ -107,4 +98,13 @@
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
+        <Category2>_ 2</Category2>
+    </LogFile>
 </settings>
