@@ -99,7 +99,7 @@ void uart0_setup(){
   IntMasterEnable();
   IntEnable(INT_UART0);
   
-  UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
+
   GPIOPinConfigure(GPIO_PA0_U0RX);
   GPIOPinConfigure(GPIO_PA1_U0TX);
   GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
@@ -110,7 +110,20 @@ void uart0_setup(){
                        UART_CONFIG_PAR_NONE));
   
   
-  UARTEnable(UART0_BASE);
+  
+  
+  
+    UARTEnable(UART0_BASE);
+    //Flush UART0
+    while(UARTCharsAvail(UART0_BASE)){
+      UARTCharGetNonBlocking(UART0_BASE);
+    }
+  
+  
+  
+
+  
+  UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
 }
 
 
